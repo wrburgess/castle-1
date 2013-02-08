@@ -1,0 +1,4 @@
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+source /usr/local/share/chruby/gemset.sh
+chruby 1.9.3

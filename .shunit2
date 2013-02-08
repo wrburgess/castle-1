@@ -1,0 +1,23 @@
+_shunit_generateReport()
+{
+  _shunit_ok_=${SHUNIT_TRUE}
+
+  [ ${__shunit_testsFailed} -gt 0 \
+      -o ${__shunit_testSuccess} -eq ${SHUNIT_FALSE} ] \
+          && _shunit_ok_=${SHUNIT_FALSE}
+
+  total=$__shunit_testsTotal
+  failed=$__shunit_assertsFailed
+  passed=$((total-failed))
+
+  echo
+  if [ ${_shunit_ok_} -eq ${SHUNIT_TRUE} ]; then
+    green "$total examples, 0 failures"
+  else
+    red "$total examples, $failed failures"
+  fi
+
+  __shunit_reportGenerated=${SHUNIT_TRUE}
+
+  unset _shunit_failures_ _shunit_msg_ _shunit_ok_ _shunit_skipped_
+}
