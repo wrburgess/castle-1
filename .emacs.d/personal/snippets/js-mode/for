@@ -1,6 +1,0 @@
-# name: for
-# key: for
-# --
-for (var ${1:key} in ${2:obj}) {
-	$0
-}

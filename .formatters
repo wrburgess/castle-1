@@ -1,8 +1,0 @@
-fuubar: Fuubar
-nc: Nc
-nyan: NyanCatFormatter
-webkit: RSpec::Core::Formatters::WebKit
-doc: documentation
-progress: progress
-default: progress
-unicorn: UnicornFormatter
