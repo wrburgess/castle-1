@@ -1,0 +1,49 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/daytonn/.emacs.d/personal/snippets/" . "ruby-mode/")
+ ("/Users/daytonn/.emacs.d/personal/" . "snippets/")
+ ("/Users/daytonn/.emacs.d/" . "personal/")
+ ("/Users/daytonn/" . ".emacs.d/")
+ ("/Users/" . "daytonn/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/daytonn/Development/icurio/"
+ "/Users/daytonn/.emacs.d/personal/snippets/ruby-mode/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "Gemfile"
+ "eq"
+ "ex"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/daytonn/Development/icurio/" (20756 8266) "vendor/" "tmp/" "TAGS" "stylesheets/" "spec/" "script/" "README.md" "Rakefile" "public/" "Procfile.local" "p/" "log/" "lib/" "Guardfile" "Gemfile.lock" "Gemfile" "doc/" "db/" "config.ru" "config/" "app/" ".ruby-version" ".rbenv-version" ".rbenv-gemsets" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/daytonn/Development/icurio/spec/models/" (20756 9460) "user_spec.rb" "topic_spec.rb" "resource_spec.rb" "engagement_spec.rb" "engagement_activity_spec.rb" "activity_spec.rb" "../" "./")
+
+ ("/Users/daytonn/.emacs.d/personal/snippets/ruby-mode/" (20756 6934) "it" "expect" "ex" "eq" "describe-full" "describe" "def" "../" "./")
+
+ ("/Users/daytonn/.emacs.d/personal/snippets/" (20755 18130) "ruby-mode/" "js-mode/" "html-mode/" ".gitkeep" "../" "./")
+
+ ("/Users/daytonn/.emacs.d/personal/" (20755 58856) "snippets/" "personal.el" "markdown-mode.el" "custom.el" "auto-complete.el" ".gitkeep" ".DS_Store" "../" "./")
+
+ ("/Users/daytonn/.emacs.d/" (20756 6309) "vendor/" "var/" "utils/" "themes/" "snippets/" "savefile/" "sample/" "README.md" "prelude-modules.el" "personal/" "modules/" "init.el" "elpa/" "core/" "CONTRIBUTING.md" "auto-save-list/" "ac-comphist.dat" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/" (20614 47253) "Shared/" "Guest/" "daytonn/" ".localized" "../" "./")
+
+ ("/Users/daytonn/" (20756 6684) "tmp/" "Rockin/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Google Drive/" "Dropbox/" "Downloads/" "Documents/" "Development/" "Desktop/" "Audio/" "Applications/" ".viminfo" ".vim/" ".Trash/" ".towns/" ".tmux.conf" ".subversion/" ".ssh/" ".smex-items" ".shunit2" ".rubies/" ".rspec" ".rbenv-version" ".psql_history" ".pry_history" ".npm/" ".netrc" ".m2/" ".lesshst" ".lein/" ".jshintrc" ".jline-clojure.main.history" ".irbrc" ".irb-save-history" ".heroku/" ".guard_history" ".gitconfig" ".gemsets/" ".gemrc" ".gem/" ".gdb_history" ".formatters" ".erc/" ".env" ".emacs.d/" ".DS_Store" ".dropbox/" ".derp/" ".cups/" ".consularc" ".config/" ".colors" ".chruby" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_profile" ".bash_history" ".bash_functions" ".bash_completion.d/" ".aliases" ".adobe/" ".ackrc" "../" "./")
+
+ ("/Users/daytonn/Development/" (20750 52257) "unicornleap/" "unicorn-formatter/" "underwear/" "underscore/" "tweetbot/" "toolshed.wiki/" "toolshed/" "supermodel/" "stitchjs/" "sprockets/" "spellbook-rails/" "spellbook/" "shunit2C/" "shunit/" "shopeel_web.backup/" "shopeel_web/" "sandbox/" "rformat/" "railsbootstrap/" "progress.original/" "progress.js/" "progress/" "processing/" "presentations/" "offline/" "ntunes/" "mynyl/" "mixn_mobile/" "mixn_api/" "mememe/" "magicfield/" "license-generator.original/" "license-generator/" "katas/" "js_patterns/" "jasmine-jquery/" "index.html" "icurio.wiki/" "icurio/" "HelloMotion/" "groupon_april_fools/" "gnag/" "gitpoints/" "ghettorss/" "game_of_life/" "devmynd_hubot/" "daytonnolan.com/" "daytonn.github.com/" "cooktabulo.us/" "closures/" "chruby/" "cdnjs-ruby/" "C/" "Boxey/" "bourbon/" "beatscraper/" "beatportrss/" "basicrpg/" "auto-gemsets/" "Arduino/" "architecture-js/" ".rbenv-gemsets" ".DS_Store" "../" "./")
+
+ ("/Users/daytonn/Development/icurio/spec/" (20756 5083) "support/" "spec_helper.rb" "models/" "lib/" "javascripts/" "helpers/" "fixtures/" "features/" "factories.rb" "controllers/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
