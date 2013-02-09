@@ -143,6 +143,24 @@ function nx {
   fi
 }
 
+function copy {
+  if [ -n "$1" ]; then
+    if [ -f "$1" ] && [ ! -d "$1" ]; then
+      cat "$1" | pbcopy
+      echo "copied!"
+    else
+      if [ -d "$1" ]; then
+        echo "$1 is a directory"
+      else
+        echo "No such file $1"
+      fi
+      echo
+      echo "Usage:"
+      echo "  copy <filename>"
+    fi
+  fi
+}
+
 function example {
   echo "\$# = $# (argument count)"
   echo "\$@ = $@ (arguments)"
