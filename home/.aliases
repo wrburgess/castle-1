@@ -33,6 +33,7 @@ alias clock='date "+%l:%M %p - %m/%d %a"'
 alias sha1='openssl sha1'
 alias diff="colordiff"
 alias h="history"
+alias q="exit"
 
 #Settings
 #alias brc='open ~/.bashrc -a "Sublime Text 2"'
