@@ -1,50 +1,68 @@
-(((":engagement_activity" .
-   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("engagement_activity" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":student_response_submitted" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":student_response_saved" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":student" .
-   [1 0 0 0 0 0 0 0])
-  (":feedback_viewed" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  (":student_response" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":feedback_incomplete" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  (":response_submitted" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":response_drafted" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("state_machine" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("lognot" .
-   [0 0 0 3 0 0])
-  ("yas/load-directory" .
-   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("log" .
-   [4 0 2])
-  ("zenburn" .
-   [1 0 0 0 0 0 0])
-  ("display-graphic-p" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("current-itunes-song" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("nil" .
-   [1 0 0])
-  ("mode-line-format" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("find-file" .
-   [1 0 0 0 0 0 0 0 0])
-  ("engagement_id" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("topic_order:" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("adwaita" .
-   [1 0 0 0 0 0 0])
+((("meta" .
+   [4 0 0 0])
+  ("save-buffers-kill-terminal" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mouse-wheel-progressive-speed" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mouse-wheel-scroll-amount" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mouse-wheel-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("spark_item_id" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0])
   ("l" .
    [1])
-  ("spark_item_id" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0])))
+  ("adwaita" .
+   [1 0 0 0 0 0 0])
+  ("topic_order:" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("engagement_id" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("find-file" .
+   [1 0 0 0 0 0 0 0 0])
+  ("mode-line-format" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("nil" .
+   [3 0 0])
+  ("current-itunes-song" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("display-graphic-p" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("zenburn" .
+   [1 0 0 0 0 0 0])
+  ("log" .
+   [4 0 2])
+  ("yas/load-directory" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("lognot" .
+   [0 0 0 3 0 0])
+  ("state_machine" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":response_drafted" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  (":response_submitted" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":feedback_incomplete" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  (":student_response" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":feedback_viewed" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  (":student" .
+   [1 0 0 0 0 0 0 0])
+  (":student_response_saved" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":student_response_submitted" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("engagement_activity" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":engagement_activity" .
+   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("Hello" .
+   [1 0 0 0 0])
+  ("teacher_engage_path" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("alt" .
+   [1 0 0])
+  ("hyper" .
+   [1 0 0 0 0])))
