@@ -34,7 +34,7 @@ alias sha1='openssl sha1'
 alias diff="colordiff"
 alias h="history"
 alias q="exit"
-
+alias emc="cd ~/.emacs.d/personal"
 #Settings
 #alias brc='open ~/.bashrc -a "Sublime Text 2"'
 alias brc="$EDITOR ~/.bashrc"
@@ -44,6 +44,7 @@ alias als='open ~/.aliases -a "Sublime Text 2"'
 alias ev='open ~/.env -a "Sublime Text 2"'
 alias reload='source ~/.bash_profile;chruby 1.9.3-p286;'
 alias sh='bash'
+alias hmsik="cd ~/.homesick/repos/castle/home"
 
 # Bundler
 alias be="bundle exec "
