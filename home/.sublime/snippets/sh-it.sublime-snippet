@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+test_it_$1() {
+  $0
+
+  assertEquals " it ${1/_/ /g}" \
+    "$2" "$3"
+}
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>it</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.shell</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Faster test definitions for shunit2</description>
+</snippet>

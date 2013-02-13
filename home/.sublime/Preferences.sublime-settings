@@ -1,0 +1,64 @@
+{
+	"auto_complete_delay": 0,
+	"color_scheme": "Packages/User/themes/Neopolitan.tmTheme",
+	"drag_text": false,
+	"ensure_newline_at_eof_on_save": false,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"travis.yml",
+		".rspec",
+		".gitignore",
+		".document",
+		".rvmrc",
+		".travis.yml",
+		"README.rdoc",
+		"*.scssc"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"font_face": "Monaco",
+	"font_size": 16.0,
+	"gutter": true,
+	"highlight_line": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage",
+		"sublime-jslint"
+	],
+	"line_numbers": true,
+	"margin": 0,
+	"node_path": "/usr/local/bin/node",
+	"notification_command": "/usr/bin/notify-send \"%(title)s\" \"%(msg)s\" --icon=\"%(image)s\"",
+	"remember_open_files": false,
+	"soda_classic_tabs": true,
+	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}

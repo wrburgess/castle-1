@@ -1,0 +1,15 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"ColorPick",
+		"DetectSyntax",
+		"Gist",
+		"Git",
+		"Markdown Preview",
+		"Package Control",
+		"SetSyntax",
+		"SublimeLinter",
+		"Theme - Soda"
+	]
+}
