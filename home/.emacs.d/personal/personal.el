@@ -22,10 +22,12 @@
   (set-font-size 113))
 
 (defun set-font-cinema ()
+  "Set font size for the cinema display"
   (interactive)
   (set-font-size 170))
 
 (defun current-itunes-song ()
+  "Show the currently playing song in iTunes in the mode-line"
   (interactive)
   (do-applescript
    "tell application \"iTunes\"
@@ -36,6 +38,7 @@
         end tell"))
 
 (defun ep ()
+  "Open ~/.emacs.d/personal/personal.el in current buffer"
   (interactive)
   (find-file "~/.emacs.d/personal/personal.el"))
 
@@ -50,7 +53,28 @@
           minor-mode-list)
     (message "Active modes are %s" all-active-modes)))
 
-;; Powerline
+(defun toggle-transparency ()
+  "Toggle window trasnsparency"
+  (interactive)
+  (if (/=
+       (or (cadr (frame-parameter nil 'alpha)) 100)
+       100)
+      (set-frame-parameter nil 'alpha '(100 100))
+    (set-frame-parameter nil 'alpha '(85 50))))
+
+(defun launch-hashrocket-for-the-lord ()
+  "Insert hash rockets in one key"
+  (interactive)
+  (insert "=>"))
+
+(global-set-key [f6] 'slime-js-reload)
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (slime-js-minor-mode 1)))
+
+(add-to-list 'load-path "/path/to/js2-mode/directory")
+
+;; POWERLINE
 (powerline-default)
 
 ;; Smexy
@@ -67,8 +91,6 @@
 ;; Editor settings
 (setq ispell-dictionary "en")
 (setq default-tab-width 2)
-(setq js-indent-level 2)
-(setq js2-basic-offset 2)
 (setq prelude-guru nil)
 (global-linum-mode 1)
 (set-default 'cursor-type 'bar)
@@ -77,7 +99,7 @@
   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.jst" . html-mode))
-
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (setq prelude-whitespace nil)
 (setq linum-format " %d ")
 
@@ -98,6 +120,7 @@
 (global-set-key (kbd "<C-S-up>")     'buf-move-up)
 (global-set-key (kbd "<f5>")  'sort-lines)
 
+;; Hotkeys
 (global-set-key (kbd "C-\\")  'switch-to-previous-buffer)
 (global-set-key (kbd "s-a")  'mark-page)
 (global-set-key (kbd "s-q")  'save-buffers-kill-terminal)
@@ -114,13 +137,15 @@
 (global-set-key (kbd "s-D")  'prelude-duplicate-current-line-or-region)
 (global-set-key (kbd "s-e")  'eval-buffer)
 (global-set-key (kbd "s-z")  'undo)
-;; Home
-(cd "~/Development")
+(global-set-key (kbd "s-u") 'toggle-transparency)
+(global-set-key (kbd "s-l") 'launch-hashrocket-for-the-lord)
+(global-set-key (kbd "s-=") 'launch-hashrocket-for-the-lord)
+(global-set-key (kbd "s-.") 'shell)
 
+;; HOME
+(cd "~/Development")
 (set-font-cinema)
 (set-fringe-mode 0)
 (scroll-bar-mode -1)
 (disable-theme 'zenburn)
 (load-theme 'neopolitan t)
-
-;; Dear Emacs the 70's called and they dig your magic comments
