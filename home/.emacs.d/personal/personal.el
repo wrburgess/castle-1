@@ -67,13 +67,21 @@
   (interactive)
   (insert "=>"))
 
-(global-set-key [f6] 'slime-js-reload)
-(add-hook 'js2-mode-hook
-          (lambda ()
-            (slime-js-minor-mode 1)))
+(setq mode-require-final-newline nil)
 
-(add-to-list 'load-path "/path/to/js2-mode/directory")
+;; JS2
+(custom-set-variables
+ '(js2-basic-offset 2)
+ '(js2-bounce-indent-p nil)
+ )
 
+;; Captain hooks
+(add-hook 'before-save-hook 'whitespace-cleanup nil t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; Snippets
+(setq yas-snippet-dirs '("~/.emacs.d/personal/snippets/"))
+(add-hook 'snippet-mode (lambda () (setq require-final-newline nil)))
 ;; POWERLINE
 (powerline-default)
 
@@ -128,7 +136,6 @@
 (global-set-key (kbd "s-H")  'split-window-below)
 (global-set-key (kbd "s-F")  'ack)
 (global-set-key (kbd "s-f")  'occur)
-(global-set-key (kbd "s-t")  'projectile-find-file)
 (global-set-key (kbd "M-t")  'projectile-find-file)
 (global-set-key (kbd "s-w")  'delete-window)
 (global-set-key (kbd "s-o")  'ido-find-file)
@@ -141,7 +148,15 @@
 (global-set-key (kbd "s-l") 'launch-hashrocket-for-the-lord)
 (global-set-key (kbd "s-=") 'launch-hashrocket-for-the-lord)
 (global-set-key (kbd "s-.") 'shell)
-
+;; rinari-mode
+(global-set-key (kbd "s-C") 'rinari-find-controller)
+(global-set-key (kbd "s-M") 'rinari-find-model)
+(global-set-key (kbd "<C-S-s-v>") 'rinari-find-view)
+(global-set-key (kbd "s-R") 'rinari-find-rspec)
+(global-set-key (kbd "<S-s-RET>") 'rinari-find-migration)
+(global-set-key (kbd "C-S-s-c") 'rinari-find-configuration)
+(global-set-key (kbd "s-t")  'rinari-find-file-in-project)
+(setq rinari-tags-file-name "TAGS")
 ;; HOME
 (cd "~/Development")
 (set-font-cinema)
