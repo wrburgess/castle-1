@@ -17,15 +17,12 @@
 (setq ac-quick-help-delay 1)
 (setq ac-quick-help-height 60)
 
-(set-default 'ac-sources
-             '(ac-source-dictionary
-               ac-source-words-in-buffer
-               ac-source-symbols
-               ac-source-functions
+(setq-default ac-sources
+             '(ac-source-yasnippet
+               ac-source-dictionary
                ac-source-abbrev
-               ac-source-words-in-same-mode-buffers
-               ac-source-words-in-all-buffer
-               ac-source-yasnippet))
+               ac-source-css-property
+               ac-source-words-in-same-mode-buffers))
 
 ;;ac-source-css-property
 (dolist (mode '(magit-log-edit-mode log-edit-mode org-mode text-mode haml-mode
@@ -33,6 +30,8 @@
                 html-mode nxml-mode sh-mode smarty-mode clojure-mode
                 lisp-mode textile-mode markdown-mode tuareg-mode scss-mode))
   (add-to-list 'ac-modes mode))
+
+(add-hook 'elisp-mode (lambda () add-to-list 'ac-sources '(ac-source-symbols ac-source-functions)))
 
 ;(require 'ac-slime)
 ;(add-hook 'slime-mode-hook 'set-up-slime-ac)
