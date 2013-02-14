@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: input
+# key: input
+# --
+<input type="${1:text}" name="$2"${3: id="$4"}${5: class="$6"}${7:tabindex="$8"}/>
