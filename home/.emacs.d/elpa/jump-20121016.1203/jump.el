@@ -64,7 +64,7 @@
 
 ;;; Code:
 (if (featurep 'xemacs)
-  (add-to-list 'load-path (file-name-as-directory (or load-file-name buffer-file-name))))
+    (add-to-list 'load-path (file-name-as-directory (or load-file-name buffer-file-name))))
 (require 'which-func)
 (require 'findr)
 (require 'inflections)
@@ -95,33 +95,34 @@
 buffer."
   (let ((func (funcall method-command)))
     (or (and func (string-match "#\\(.+\\)" func) (match-string 1 func))
-	func)))
+        func)))
 
 (defun jump-uniqueify (file-cons)
   "Set the car of the argument to include the directory name plus the file name."
   (setcar file-cons
-	  (concat (car file-cons) " "
-		  (cadr (reverse (split-string (cdr file-cons) "/"))))))
+          (concat (car file-cons) " "
+                  (cadr (reverse (split-string (cdr file-cons) "/"))))))
 
 (defun jump-select-and-find-file (files)
   "Select a single file from an alist of file names and paths.
 Return the path selected or nil if files was empty."
   (let ((file   (case (length files)
-		  (0 nil)
-		  (1 (caar files))
-		  (t (jump-completing-read "Jump to: "
-					   (mapcar 'car files))))))
+                  (0 nil)
+                  (1 (caar files))
+                  (t (jump-completing-read "Jump to: "
+                                           (mapcar 'car files))))))
     (if file (find-file (cdr (assoc file files))))))
 
 (defun jump-remove-unwanted-files (files)
   "Remove file matching `jump-ignore-file-regexp' from the list
 of possible jumps."
   (delete-if nil
-	     (mapcar
-	      (lambda (file-cons)
-		(unless (string-match jump-ignore-file-regexp (cdr file-cons))
-		  file-cons))
-	      files)))
+             (mapcar
+              (lambda (file-cons)
+                (unless (string-match jump-ignore-file-regexp (cdr file-cons))
+                  file-cons))
+              files)))
+
 
 (defun jump-to-file (&optional file)
   "Open the file located at file if file ends in a / then look in
@@ -129,29 +130,29 @@ the related directory, and if file contains regexps then select
 from all matches."
   (interactive "Mfile: ")
   (let ((file-cons (cons (file-name-nondirectory file) file))
-	file-alist)
+        file-alist)
     (if (and (equal (file-name-directory file) file) (file-exists-p file))
-	(jump-find-file-in-dir (expand-file-name file root)) ;; open directory
+        (jump-find-file-in-dir (expand-file-name file root)) ;; open directory
       (if (file-exists-p file)
-	  (find-file file) ;; open file
-	(jump-select-and-find-file ;; open with regexp
-	 (jump-remove-unwanted-files
-	  (mapcar (lambda (file)
-		    (let ((file-cons (cons (file-name-nondirectory file)
-					   (expand-file-name file))))
-		      (when (assoc (car file-cons) file-alist)
-			(jump-uniqueify (assoc (car file-cons) file-alist))
-			(jump-uniqueify file-cons))
-		      (add-to-list 'file-alist file-cons)
-		      file-cons))
-		  (let ((dir (expand-file-name
-			      (or (file-name-directory (cdr file-cons)) "")
-			      root)))
-		    (when (and (file-exists-p dir) (file-directory-p dir))
-			(findr (car file-cons)
-			       (expand-file-name
-				(or (file-name-directory
-				     (cdr file-cons)) "") root)))))))))))
+          (find-file file) ;; open file
+        (jump-select-and-find-file ;; open with regexp
+         (jump-remove-unwanted-files
+          (mapcar (lambda (file)
+                    (let ((file-cons (cons (file-name-nondirectory file)
+                                           (expand-file-name file))))
+                      (when (assoc (car file-cons) file-alist)
+                        (jump-uniqueify (assoc (car file-cons) file-alist))
+                        (jump-uniqueify file-cons))
+                      (add-to-list 'file-alist file-cons)
+                      file-cons))
+                  (let ((dir (expand-file-name
+                              (or (file-name-directory (cdr file-cons)) "")
+                              root)))
+                    (when (and (file-exists-p dir) (file-directory-p dir))
+                      (findr (car file-cons)
+                             (expand-file-name
+                              (or (file-name-directory
+                                   (cdr file-cons)) "") root)))))))))))
 
 (defun jump-to-method (&optional method)
   "If `jump-method' returns method in buffer, go to the first
@@ -160,16 +161,16 @@ line inside of method."
   (goto-char (point-min))
   (let (results)
     (while (not (setf results
-		      (or (string-equal (jump-method) method)
-			  (and (> (forward-line 1) 0)
-			       (goto-char (point-min)))))))
+                      (or (string-equal (jump-method) method)
+                          (and (> (forward-line 1) 0)
+                               (goto-char (point-min)))))))
     (when (and (commandp 'recenter-top-bottom) (not (equal results 1))) (recenter-top-bottom))))
 
 (defun jump-to-path (path)
   "Jump to the location specified by PATH (regexp allowed in
 path).  If path ends in / then just look in that directory"
   (let ((file path)
-	method)
+        method)
     (when (string-match "^\\(.*\\)#\\(.*\\)$" path)
       (setf method (match-string 2 path))
       (setf file (match-string 1 path)))
@@ -180,32 +181,32 @@ path).  If path ends in / then just look in that directory"
 (defun jump-insert-matches (spec matches)
   (if matches
       (let ((count 1) (new-spec spec) (spec nil))
-	(while (not (equal spec new-spec))
-	  (setf spec new-spec)
-	  (setf new-spec
-		(replace-regexp-in-string (format "\\\\%d" count)
-					  (or (nth (- count 1) matches) ".*?")
-					  spec))
-	  (setf count (+ 1 count)))
-	new-spec) spec))
+        (while (not (equal spec new-spec))
+          (setf spec new-spec)
+          (setf new-spec
+                (replace-regexp-in-string (format "\\\\%d" count)
+                                          (or (nth (- count 1) matches) ".*?")
+                                          spec))
+          (setf count (+ 1 count)))
+        new-spec) spec))
 
 (defun jump-inflections (terms)
   "Return all combinations of the singular and pluralizations of TERMS."
   (let ((terms (mapcar
-		(lambda (term)
-		  (delete-dups (list term
-				     (singularize-string term)
-				     (pluralize-string term))))
-		terms))
-	results interum-results)
+                (lambda (term)
+                  (delete-dups (list term
+                                     (singularize-string term)
+                                     (pluralize-string term))))
+                terms))
+        results interum-results)
     (dolist (group terms)
       (dolist (term group)
-	(if results
-	    (dolist (combination results)
-	      (setf interum-results (cons
-				     (cons term combination)
-				     interum-results)))
-	  (setf interum-results (cons (list term) interum-results))))
+        (if results
+            (dolist (combination results)
+              (setf interum-results (cons
+                                     (cons term combination)
+                                     interum-results)))
+          (setf interum-results (cons (list term) interum-results))))
       (setf results interum-results)
       (setf interum-results nil))
     (mapcar 'reverse results)))
@@ -213,9 +214,9 @@ path).  If path ends in / then just look in that directory"
 (defun jump-to-all-inflections (spec matches)
   (let (status) ;; TODO maybe try file first and method second
     (loop for path in (mapcar (lambda (option)
-				(jump-insert-matches spec option))
-			      (jump-inflections matches))
-	  until (setf status (jump-to-path path)))
+                                (jump-insert-matches spec option))
+                              (jump-inflections matches))
+          until (setf status (jump-to-path path)))
     status))
 
 (defun jump-to (spec &optional matches make)
@@ -227,36 +228,36 @@ MAKE to create the target file."
   (if (functionp spec) (eval (list spec matches)) ;; custom function in spec
     (let ((path (jump-insert-matches spec matches)))
       (if (not (or (jump-to-path path)
-		   (and matches (jump-to-all-inflections spec matches))))
-	  (when make (message (format "making %s" path))
-	      (let ((path (if (or (string-match "^\\(.*?\\)\\.\\*" path)
-				  (string-match "^\\(.*/\\)$" path))
-			      (read-from-minibuffer "create " (match-string 1 path))
-			    path)))
-		(when (functionp make) (eval (list make path)))
-		(find-file (concat root (if (string-match "^\\(.*\\)#" path)
-					    (match-string 1 path) path)))))
-	t))))
+                   (and matches (jump-to-all-inflections spec matches))))
+          (when make (message (format "making %s" path))
+                (let ((path (if (or (string-match "^\\(.*?\\)\\.\\*" path)
+                                    (string-match "^\\(.*/\\)$" path))
+                                (read-from-minibuffer "create " (match-string 1 path))
+                              path)))
+                  (when (functionp make) (eval (list make path)))
+                  (find-file (concat root (if (string-match "^\\(.*\\)#" path)
+                                              (match-string 1 path) path)))))
+        t))))
 
 (defun jump-from (spec)
   "Match SPEC to the current location returning a list of any matches"
   (cond ((stringp spec)
-	 (let* ((file (or (and (buffer-file-name)
-			       (expand-file-name (buffer-file-name)))
-			  (buffer-name)))
-		(method (jump-method))
-		(path (if (string-match "#.+" spec)
-			  (concat file "#" method)
-			file)))
-	   (and (string-match spec path)
-		(or (let ((counter 1) mymatch matches)
-		      (while (setf mymatch (match-string counter path))
-			(setf matches (cons mymatch matches))
-			(setf counter (+ 1 counter)))
-		      (reverse matches)) t))))
-	((functionp spec) (eval (list spec)))
-	((equal t spec) t)
-	(t (message (format "unrecognized jump-from specification format %s" spec)))))
+         (let* ((file (or (and (buffer-file-name)
+                               (expand-file-name (buffer-file-name)))
+                          (buffer-name)))
+                (method (jump-method))
+                (path (if (string-match "#.+" spec)
+                          (concat file "#" method)
+                        file)))
+           (and (string-match spec path)
+                (or (let ((counter 1) mymatch matches)
+                      (while (setf mymatch (match-string counter path))
+                        (setf matches (cons mymatch matches))
+                        (setf counter (+ 1 counter)))
+                      (reverse matches)) t))))
+        ((functionp spec) (eval (list spec)))
+        ((equal t spec) t)
+        (t (message (format "unrecognized jump-from specification format %s" spec)))))
 
 ;;;###autoload
 (defmacro defjump (name specs root &optional doc make method-command)
@@ -289,33 +290,33 @@ find the current method which defaults to `which-function'."
      ,(concat doc "\n\nautomatically created by `defjump'")
      (interactive "P")
      (let ((root ,(if (functionp root) `(,root) root))
-	   (method-command ,(or method-command 'which-function))
-	   matches)
+           (method-command ,(or method-command 'which-function))
+           matches)
        (loop ;; try every rule in mappings
-	for spec in (quote ,(mapcar
-			     (lambda (spec)
-			       (if (stringp (car spec))
-				   ;;xemacs did not understand :digit: class
-				   (if (featurep 'xemacs)
-				       (cons (replace-regexp-in-string
-					      "\\\\[0-9]+" "\\\\(.*?\\\\)"
-					      (car spec)) (cdr spec))
-				     (cons (replace-regexp-in-string
-					    "\\\\[[:digit:]]+" "\\\\(.*?\\\\)"
-					    (car spec)) (cdr spec)))
-				 spec))
-			     specs))
-	;; don't stop until both the front and the back match
-	;;
-	;; the back should match if the user is presented with a list
-	;; of files, or a single file is jumped to
-	until
-	(and (setf matches (jump-from (car spec)))
-	     (cond
-	      ((equal t matches)
-	       (jump-to (cdr spec) nil (when create ,make)))
-	      ((consp matches)
-	       (jump-to (cdr spec) matches (when create ,make)))))))))
+        for spec in (quote ,(mapcar
+                             (lambda (spec)
+                               (if (stringp (car spec))
+                                   ;;xemacs did not understand :digit: class
+                                   (if (featurep 'xemacs)
+                                       (cons (replace-regexp-in-string
+                                              "\\\\[0-9]+" "\\\\(.*?\\\\)"
+                                              (car spec)) (cdr spec))
+                                     (cons (replace-regexp-in-string
+                                            "\\\\[[:digit:]]+" "\\\\(.*?\\\\)"
+                                            (car spec)) (cdr spec)))
+                                 spec))
+                             specs))
+        ;; don't stop until both the front and the back match
+        ;;
+        ;; the back should match if the user is presented with a list
+        ;; of files, or a single file is jumped to
+        until
+        (and (setf matches (jump-from (car spec)))
+             (cond
+              ((equal t matches)
+               (jump-to (cdr spec) nil (when create ,make)))
+              ((consp matches)
+               (jump-to (cdr spec) matches (when create ,make)))))))))
 
 ;; Local Variables:
 ;; byte-compile-warnings: (not cl-functions)
