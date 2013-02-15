@@ -1,0 +1,4 @@
+open -a Flint
+open -a Sparrow
+open -a iTerm
+open ~/Development/icurio -a "Sublime Text 2"

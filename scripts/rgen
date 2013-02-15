@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+args = Array.try_convert ARGV
+
+if args.length < 2
+  puts 'rgen (generator) (name)'
+  exit 1
+end
+
+supported_generators = %w{controller model}
+
+generator = args.shift
+name = args.shift
+
+if supported_generators.include? generator
+  puts %x{bundle exec rails g #{generator} #{name} #{args.join(" ")} --no-assets --no-helper --no-javascripts --no-stylesheets --template-engine haml --test-framework rspec --no-view-specs}
+else
+  puts "unknown generator #{generator}"
+end

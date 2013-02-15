@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'terminal-notifier'
+rescue LoadError
+  puts 'You need to gem install terminal-notifier'
+  exit 1
+end
+
+minutes = ARGV[0] || 15
+seconds = minutes.to_i * 60
+
+message = ARGV[1] || "You should probably make a commit right now"
+
+if ARGV[0].nil? || ARGV[0] == "help"
+  puts "example:"
+  puts "  timer <minutes> <message>"
+else
+  begin
+    puts "Timer will notify you in #{minutes} minutes. Press Ctrl-C to quit."
+    loop do
+      sleep seconds
+      TerminalNotifier.notify(message, :title => 'Ruby Commit Timer')
+      %x{say -v 'Bad News' '#{message}'}
+    end
+  rescue SystemExit, Interrupt
+    puts " - Quitting timer..."
+    exit 1
+  end
+end
