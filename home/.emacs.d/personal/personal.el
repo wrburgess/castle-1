@@ -67,8 +67,17 @@
   (interactive)
   (insert "=>"))
 
-(setq mode-require-final-newline nil)
+(require 'rspec-mode)
+;;rspec fuckery
+(defun rspec-runner ()
+  "Returns command line to run rspec"
+  (let ((bundle-command (if (rspec-bundle-p) "source \"/Users/daytonn/.bash_profile\"; auto_gemsets; bundle exec " ""))
+        (zeus-command (if (rspec-zeus-p) "zeus " "")))
+    (concat bundle-command zeus-command (if rspec-use-rake-flag
+                                            (concat rspec-rake-command " spec")
+                                          rspec-spec-command))))
 
+(setq mode-require-final-newline nil)
 ;; JS2
 (custom-set-variables
  '(js2-basic-offset 2)
@@ -148,14 +157,19 @@
 (global-set-key (kbd "s-l") 'launch-hashrocket-for-the-lord)
 (global-set-key (kbd "s-=") 'launch-hashrocket-for-the-lord)
 (global-set-key (kbd "s-.") 'shell)
+
 ;; rinari-mode
 (global-set-key (kbd "s-C") 'rinari-find-controller)
 (global-set-key (kbd "s-M") 'rinari-find-model)
 (global-set-key (kbd "<C-S-s-v>") 'rinari-find-view)
-(global-set-key (kbd "s-R") 'rinari-find-rspec)
+(global-set-key (kbd "s-S") 'rspec-toggle-spec-and-target)
 (global-set-key (kbd "<S-s-RET>") 'rinari-find-migration)
 (global-set-key (kbd "C-S-s-c") 'rinari-find-configuration)
 (global-set-key (kbd "s-t")  'rinari-find-file-in-project)
+(global-set-key (kbd "s-R")  'rspec-verify)
+(global-set-key (kbd "s-r")  'rspec-verify-single)
+(global-set-key (kbd "C-s-r")  'rspec-verify-all)
+
 (setq rinari-tags-file-name "TAGS")
 ;; HOME
 (cd "~/Development")
