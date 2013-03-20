@@ -120,6 +120,8 @@
 (setq prelude-whitespace nil)
 (setq linum-format " %d ")
 
+(setq ring-bell-function (lambda () (message "*beep*")))
+
 ;; Thanks but no thanks Joe, I can manage to match parens myself
 (setq paredit-mode nil)
 
@@ -157,6 +159,7 @@
 (global-set-key (kbd "s-l") 'launch-hashrocket-for-the-lord)
 (global-set-key (kbd "s-=") 'launch-hashrocket-for-the-lord)
 (global-set-key (kbd "s-.") 'shell)
+(global-set-key (kbd "C-S-f") 'prelude-indent-buffer)
 
 ;; rinari-mode
 (global-set-key (kbd "s-C") 'rinari-find-controller)
