@@ -291,7 +291,7 @@
    (file-expand-wildcards
         (replace-regexp-in-string
          "/spec/"
-         (if (rspec-spec-lib-file-p a-spec-file-name) "/" "/*/")
+         (if (rspec-spec-lib-file  -p a-spec-file-name) "/" "/*/")
          (rspec-targetize-file-name a-spec-file-name)))))
 
 (defun rspec-specize-file-name (a-file-name)

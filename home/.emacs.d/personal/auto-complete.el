@@ -21,8 +21,7 @@
              '(ac-source-yasnippet
                ac-source-dictionary
                ac-source-abbrev
-               ac-source-css-property
-               ac-source-words-in-same-mode-buffers))
+               ac-source-words-in-all-buffer))
 
 ;;ac-source-css-property
 (dolist (mode '(magit-log-edit-mode log-edit-mode org-mode text-mode haml-mode
