@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+\$.ajax({
+  url: '$1',
+  type: 'get',
+  dataType: 'json',
+  data: {},
+  success: function() {
+
+  },
+  error: function() {
+
+  }
+});
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>ajax</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.js</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>jQuery ajax</description>
+</snippet>

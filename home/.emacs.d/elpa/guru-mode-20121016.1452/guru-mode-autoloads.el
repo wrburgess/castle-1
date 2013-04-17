@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (guru-global-mode guru-mode) "guru-mode" "guru-mode.el"
-;;;;;;  (20745 60559))
-;;; Generated autoloads from guru-mode.el
+;;;### (autoloads (guru-global-mode guru-mode) "guru-mode" "../../../../../../../.emacs.d/elpa/guru-mode-20121016.1452/guru-mode.el"
+;;;;;;  "fee5e8f3a03fea6f05d0bbd33fef3ff1")
+;;; Generated autoloads from ../../../../../../../.emacs.d/elpa/guru-mode-20121016.1452/guru-mode.el
 
 (autoload 'guru-mode "guru-mode" "\
 A minor mode that teaches you to use Emacs effectively.
@@ -35,7 +35,9 @@ See `guru-mode' for more information on Guru mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("guru-mode-pkg.el") (20745 60559 883759))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/guru-mode-20121016.1452/guru-mode-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/guru-mode-20121016.1452/guru-mode.el")
+;;;;;;  (20812 35971 770726 0))
 
 ;;;***
 

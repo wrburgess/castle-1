@@ -3,8 +3,10 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("pcache-pkg.el" "pcache-tests.el" "pcache.el")
-;;;;;;  (20745 60557 870029))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/pcache-20120408.1206/pcache-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/pcache-20120408.1206/pcache-tests.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/pcache-20120408.1206/pcache.el")
+;;;;;;  (20812 35964 757058 0))
 
 ;;;***
 

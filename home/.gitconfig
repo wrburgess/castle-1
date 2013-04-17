@@ -1,6 +1,6 @@
 [user]
 	name = Dayton Nolan
-	email = dnolan@gmail.com
+	email = daytonn@gmail.com
 [credential]
     helper = osxkeychain
 [mergetool]
@@ -8,7 +8,7 @@
 [github]
     user = daytonn
 [core]
-	editor = vim
+	editor = emacs
 [alias]
   torqued = reset --hard
 	co = checkout
@@ -47,3 +47,5 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[push]
+	default = simple

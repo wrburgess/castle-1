@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+if ($1) {
+  $3
+}${2: else \{
+  $4
+\}
+}$0
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>if</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.js</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>JavaScript if</description>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+function${1: }($2) {
+  $0
+}$3
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>f</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.js</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>JavaScript function</description>
+</snippet>

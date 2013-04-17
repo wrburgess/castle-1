@@ -3,9 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (magithub-clone) "magithub" "magithub.el" (20745
-;;;;;;  60569))
-;;; Generated autoloads from magithub.el
+;;;### (autoloads (magithub-clone) "magithub" "../../../../../../../.emacs.d/elpa/magithub-20121130.1740/magithub.el"
+;;;;;;  "da485cc61f0a4194d3ec9f7dbcfd89b7")
+;;; Generated autoloads from ../../../../../../../.emacs.d/elpa/magithub-20121130.1740/magithub.el
 
 (autoload 'magithub-clone "magithub" "\
 Clone GitHub repo USERNAME/REPO into directory DIR.
@@ -21,7 +21,9 @@ prefix arg, clone using SSH.
 
 ;;;***
 
-;;;### (autoloads nil nil ("magithub-pkg.el") (20745 60569 275014))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/magithub-20121130.1740/magithub-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/magithub-20121130.1740/magithub.el")
+;;;;;;  (20812 36014 960858 0))
 
 ;;;***
 

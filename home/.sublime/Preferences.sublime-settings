@@ -41,7 +41,7 @@
 		"CVS"
 	],
 	"font_face": "Monaco",
-	"font_size": 16.0,
+	"font_size": 15.0,
 	"gutter": true,
 	"highlight_line": true,
 	"hot_exit": false,
@@ -56,6 +56,7 @@
 	"notification_command": "/usr/bin/notify-send \"%(title)s\" \"%(msg)s\" --icon=\"%(image)s\"",
 	"remember_open_files": false,
 	"soda_classic_tabs": true,
+	"spell_check": false,
 	"tab_size": 2,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+//= require ${1:"$0"}
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>req</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.scss</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Sprockets require</description>
+</snippet>

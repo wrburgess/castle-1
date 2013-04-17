@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+id="$0"
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>id</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.html</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>id attribute</description>
+</snippet>

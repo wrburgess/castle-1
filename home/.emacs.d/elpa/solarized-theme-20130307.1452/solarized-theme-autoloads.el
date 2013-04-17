@@ -3,16 +3,20 @@
 ;;; Code:
 
 
-;;;### (autoloads nil "solarized" "solarized.el" (20803 37408))
-;;; Generated autoloads from solarized.el
+;;;### (autoloads nil "solarized" "../../../../../../../.emacs.d/elpa/solarized-theme-20130307.1452/solarized.el"
+;;;;;;  "fdfd1081c4790973f7904bd21200a026")
+;;; Generated autoloads from ../../../../../../../.emacs.d/elpa/solarized-theme-20130307.1452/solarized.el
 
 (when (and (boundp 'custom-theme-load-path) load-file-name) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))
 
 ;;;***
 
-;;;### (autoloads nil nil ("solarized-dark-theme.el" "solarized-light-theme.el"
-;;;;;;  "solarized-theme-pkg.el" "solarized-theme-utils.el") (20803
-;;;;;;  37408 183203))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/solarized-theme-20130307.1452/solarized-dark-theme.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/solarized-theme-20130307.1452/solarized-light-theme.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/solarized-theme-20130307.1452/solarized-theme-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/solarized-theme-20130307.1452/solarized-theme-utils.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/solarized-theme-20130307.1452/solarized.el")
+;;;;;;  (20812 36019 296710 0))
 
 ;;;***
 

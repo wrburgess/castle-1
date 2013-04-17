@@ -22,9 +22,44 @@
 				<key>lineHighlight</key>
 				<string>#FFFFFF0F</string>
 				<key>selection</key>
-				<string>#253B76</string>b
+				<string>#253B76</string>
 			</dict>
 		</dict>
+		<!-- GitGutter -->
+		<dict>
+		  <key>name</key>
+		  <string>diff.deleted</string>
+		  <key>scope</key>
+		  <string>markup.deleted</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#F92672</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>diff.inserted</string>
+		  <key>scope</key>
+		  <string>markup.inserted</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#61CE3C</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>diff.changed</string>
+		  <key>scope</key>
+		  <string>markup.changed</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#FBDE2D</string>
+		  </dict>
+		</dict>
+		<!-- end GitGutter -->
 		<!-- SublimeLinter settings -->
 		<!-- gutter dots -->
 		<dict>

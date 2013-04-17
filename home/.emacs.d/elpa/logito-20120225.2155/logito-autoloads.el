@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("logito-pkg.el" "logito.el") (20745 60557
-;;;;;;  577404))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/logito-20120225.2155/logito-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/logito-20120225.2155/logito.el")
+;;;;;;  (20812 35963 910406 0))
 
 ;;;***
 

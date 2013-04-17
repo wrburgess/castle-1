@@ -1,3 +1,10 @@
+#Derps
+alias bindle="bundle"
+alias exut="exit"
+alias rale="rake"
+alias raje="rake"
+alias rials="rails"
+
 #File System
 alias files="ls -l | grep -v ^d"
 alias folders="s -ld */"
@@ -9,6 +16,7 @@ alias lcl="cd /usr/local"
 alias src='cd /usr/local/src'
 alias bin='cd /usr/local/bin'
 alias t='touch '
+alias snips="ls -a ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/snippets | cat"
 
 #Shortcuts
 alias ~="cd ~"
@@ -35,6 +43,7 @@ alias diff="colordiff"
 alias h="history"
 alias q="exit"
 alias emc="cd ~/.emacs.d/personal"
+
 #Settings
 #alias brc='open ~/.bashrc -a "Sublime Text 2"'
 alias brc="$EDITOR ~/.bashrc"
@@ -42,9 +51,9 @@ alias bp='open ~/.bash_profile -a "Sublime Text 2"'
 alias bfn='open ~/.bash_functions -a "Sublime Text 2"'
 alias als='open ~/.aliases -a "Sublime Text 2"'
 alias ev='open ~/.env -a "Sublime Text 2"'
-alias reload='source ~/.bash_profile;chruby 1.9.3-p286;'
+alias reload='source ~/.bash_profile;'
 alias sh='bash'
-alias hmsik="cd ~/.homesick/repos/castle/home"
+alias hmsik="cd ~/.homesick/repos/castle"
 
 # Bundler
 alias be="bundle exec "
@@ -53,6 +62,7 @@ alias be="bundle exec "
 alias migrate="bundle exec rake db:migrate"
 alias prepare="bundle exec rake db:test:prepare"
 alias ucorn="bundle exec unicorn -p 3000"
+alias rint="rake spec:integration"
 
 #Git
 alias st="git status"
@@ -77,7 +87,9 @@ alias hidedock="defaults write com.apple.dock tilesize -int 1;defaults write com
 
 # Rails shortcuts
 alias guard="guard --no-bundler-warning"
+alias gi="guard -g interactive"
 alias templates="tree app/assets/javascripts/templates"
+alias jst="rake jst:watch"
 alias js="tree app/assets/javascripts"
 alias jsviews="tree app/assets/javascripts/views"
 alias jsmodels="tree app/assets/javascripts/models"
@@ -87,14 +99,10 @@ alias controllers="tree app/controllers"
 alias views="tree app/views"
 alias models="tree app/models"
 
-alias gs="~/Development/auto-gemsets/bin/gemset"
-
 # Color
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
-
-alias gemset="~/Development/auto-gemsets/bin/gemset"
 
 
 alias tag-rails="ctags -a -e -f TAGS --tag-relative -R app lib"

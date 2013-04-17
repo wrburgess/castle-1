@@ -9,7 +9,7 @@ module SubSnip
     end
 
     def snippet_filepath
-      "#{ENV['HOME']}/Library/Application\ Support/Sublime\ Text\ 2/Packages/User"
+      File.join(ENV['HOME'], 'Library', 'Application Support', 'Sublime Text 2', 'Packages', 'User', 'snippets')
     end
 
     def application

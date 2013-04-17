@@ -1,260 +1,262 @@
-((("you" .
-   [1 0 0])
-  ("%p" .
-   [1 0])
-  ("template" .
-   [1 0 0 0 0 0 0 0])
-  ("html" .
+((("parse" .
+   [1 0 0 0 0])
+  ("JSON" .
    [1 0 0 0])
-  ("publish_to_active_assignments" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("class=" .
-   [1 0 0 0 0 0])
-  ("editor_selector" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("/li" .
-   [1 0 0])
-  ("render" .
-   [3 0 0 0 0 0])
-  ("el" .
-   [1 0])
-  ("activity.get" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("archived" .
-   [1 0 0 0 0 0 0 0])
-  ("index" .
-   [6 0 0 0 0])
-  ("templateData" .
-   [1 0 0 0 0 0 0 0 1 0 0 0])
-  ("fetch" .
-   [1 0 0 0 0])
-  ("Courses" .
-   [1 0 0 0 0 0 0])
-  ("Collections" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("collection" .
-   [3 0 0 0 0 0 0 0 0 0])
-  ("response" .
-   [4 0 0 0 0 0 0 0])
-  ("callbacks" .
-   [1 0 0 0 0 0 0 0 0])
-  ("get" .
+  ("responseText" .
+   [2 0 0 0 1 0 0 0 0 0 0 0])
+  ("bar" .
    [2 0 0])
-  ("Messenger" .
-   [1 0 0 0 0 0 0 0 0])
-  ("handleJoinCourseClickSuccess" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("register" .
-   [1 0 0 0 0 0 0 0])
-  ("search" .
-   [1 0 0 0 0 0])
-  ("Models" .
-   [1 0 0 0 0 0])
-  ("Course" .
-   [1 0 0 0 0 0])
-  ("noop" .
-   [4 0 0 0])
-  ("error" .
-   [3 0 0 0 0])
-  ("success" .
-   [4 0 0 0 0 0 0])
-  ("regCode" .
-   [4 0 0 0 0 0 0])
-  ("alert" .
-   [2 0 0 0 0])
-  ("handleJoinCourseClick" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0])
-  ("course" .
-   [3 0 0 0 0 0])
-  ("'name'" .
-   [2 0 0 0 0 0])
-  ("model.get" .
-   [1 0 0 0 0 0 0 0 0])
-  ("%=" .
-   [1 0])
-  ("wrapPrimitive" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("var" .
-   [2 0 0])
-  ("options" .
-   [3 0 0 0 0 0 0])
-  ("hidePrimarySubjects" .
-   [1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("this" .
-   [13 0 0 0])
-  ("errors" .
-   [2 0 0 0 0 0])
-  ("post_params" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("create" .
-   [1 0 0 0 0 0])
-  (":course" .
-   [1 0 0 0 0 0 0])
-  ("term_id" .
-   [1 0 0 0 0 0 0])
-  ("rspec-mode" .
+  ("saveCourse" .
    [1 0 0 0 0 0 0 0 0 0])
-  ("Icurio" .
-   [5 0 0 0 0 0])
-  ("snippet-mode" .
-   [0 0 0 0 0 0 0 1 0 0 0 0])
-  ("add-hook" .
-   [0 0 0 0 0 0 0 1])
-  ("require-final-newline" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("f6" .
-   [1 0])
-  ("f3" .
-   [1 0])
-  ("/=" .
-   [1 0])
-  ("hyper" .
+  ("function" .
+   [2 0 0 0 0 0 0 0])
+  ("handleSaveCourseClick" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("save" .
+   [1 0 0 0])
+  ("click" .
    [1 0 0 0 0])
-  ("alt" .
-   [1 0 0])
-  ("teacher_engage_path" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("Hello" .
-   [1 0 0 0 0])
-  (":engagement_activity" .
-   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("engagement_activity" .
-   [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":student_response_submitted" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":student_response_saved" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":student" .
-   [1 0 0 0 0 0 0 0])
-  (":feedback_viewed" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  (":student_response" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":feedback_incomplete" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  (":response_submitted" .
-   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":response_drafted" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("state_machine" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("lognot" .
-   [0 1 0 6 0 0])
-  ("yas/load-directory" .
-   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("log" .
-   [9 0 2])
-  ("zenburn" .
+  ("events" .
+   [1 0 0 0 0 0])
+  ("courses" .
    [1 0 0 0 0 0 0])
-  ("display-graphic-p" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("current-itunes-song" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("nil" .
-   [3 0 0])
-  ("mode-line-format" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("find-file" .
-   [1 0 0 0 0 0 0 0 0])
-  ("engagement_id" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("topic_order:" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("adwaita" .
-   [1 0 0 0 0 0 0])
-  ("l" .
-   [1])
-  ("spark_item_id" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("mouse-wheel-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("mouse-wheel-scroll-amount" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("mouse-wheel-progressive-speed" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("save-buffers-kill-terminal" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("meta" .
-   [4 0 0 0])
-  ("cd" .
-   [1 0])
-  ("spark" .
-   [3 0 0 0 0])
-  ("div" .
-   [1 0 0])
-  ("describe-key" .
-   [1 0 0 0 0 0 0 0 0 0 0 0])
-  ("ac-source-functions" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("ac-source" .
-   [0 0 0 0 0 0 0 0 1])
-  ("do-symbols" .
-   [0 0 1 0 0 0 0 0 0 0])
-  ("js2-mode" .
-   [1 0 0 0 0 0 0 0])
-  ("if" .
-   [2 0])
-  ("model" .
-   [7 0 0 0 0])
-  ("db" .
-   [1 0])
-  ("to_json" .
-   [1 0 0 0 0 0 0])
-  ("engagement_id:" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  (":id" .
-   [1 0 0])
-  ("activity_id:" .
-   [2 0 0 0 0 0 0 0 0 0 0 0])
-  ("left" .
-   [0 0 0 1])
-  ("EngagementActivity" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("ac-source-words-in-all-buffer" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("teacher_id" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("id" .
-   [3 0])
-  ("teacher" .
-   [2 0 0 0 0 0 0])
-  ("first" .
-   [2 0 0 0 0])
-  ("second_activity" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("activity" .
-   [3 0 0 0 0 0 0 0])
-  ("second_ea" .
-   [0 0 0 0 0 0 1 0 0])
-  ("next_activity" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("engagement" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("'activity'" .
+  ("login_user" .
    [1 0 0 0 0 0 0 0 0 0])
   ("false" .
    [1 0 0 0 0])
-  ("login_user" .
+  ("'activity'" .
    [1 0 0 0 0 0 0 0 0 0])
-  ("courses" .
+  ("engagement" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("next_activity" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("second_ea" .
+   [0 0 0 0 0 0 1 0 0])
+  ("activity" .
+   [3 0 0 0 0 0 0 0])
+  ("second_activity" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("first" .
+   [2 0 0 0 0])
+  ("teacher" .
+   [2 0 0 0 0 0 0])
+  ("id" .
+   [4 0])
+  ("teacher_id" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("ac-source-words-in-all-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("EngagementActivity" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("left" .
+   [0 0 0 1])
+  ("activity_id:" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  (":id" .
+   [1 0 0])
+  ("engagement_id:" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("to_json" .
    [1 0 0 0 0 0 0])
-  ("events" .
-   [1 0 0 0 0 0])
-  ("click" .
+  ("db" .
+   [1 0])
+  ("model" .
+   [8 0 0 0 0])
+  ("if" .
+   [2 0])
+  ("js2-mode" .
+   [1 0 0 0 0 0 0 0])
+  ("do-symbols" .
+   [0 0 1 0 0 0 0 0 0 0])
+  ("ac-source" .
+   [0 0 0 0 0 0 0 0 1])
+  ("ac-source-functions" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("describe-key" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("div" .
+   [1 0 0])
+  ("spark" .
+   [3 0 0 0 0])
+  ("cd" .
+   [1 0])
+  ("meta" .
+   [4 0 0 0])
+  ("save-buffers-kill-terminal" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mouse-wheel-progressive-speed" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mouse-wheel-scroll-amount" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mouse-wheel-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("spark_item_id" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("l" .
+   [1])
+  ("adwaita" .
+   [1 0 0 0 0 0 0])
+  ("topic_order:" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("engagement_id" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("find-file" .
+   [1 0 0 0 0 0 0 0 0])
+  ("mode-line-format" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("nil" .
+   [3 0 0])
+  ("current-itunes-song" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("display-graphic-p" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("zenburn" .
+   [1 0 0 0 0 0 0])
+  ("log" .
+   [9 0 2])
+  ("yas/load-directory" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("lognot" .
+   [0 1 0 6 0 0])
+  ("state_machine" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":response_drafted" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  (":response_submitted" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":feedback_incomplete" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  (":student_response" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":feedback_viewed" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  (":student" .
+   [1 0 0 0 0 0 0 0])
+  (":student_response_saved" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":student_response_submitted" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("engagement_activity" .
+   [5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":engagement_activity" .
+   [1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("Hello" .
    [1 0 0 0 0])
-  ("save" .
-   [1 0 0 0])
-  ("handleSaveCourseClick" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("function" .
-   [2 0 0 0 0 0 0 0])
-  ("saveCourse" .
+  ("teacher_engage_path" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("alt" .
+   [1 0 0])
+  ("hyper" .
+   [1 0 0 0 0])
+  ("/=" .
+   [1 0])
+  ("f3" .
+   [1 0])
+  ("f6" .
+   [1 0])
+  ("require-final-newline" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("add-hook" .
+   [0 0 0 0 0 0 0 1])
+  ("snippet-mode" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("Icurio" .
+   [5 0 0 0 0 0])
+  ("rspec-mode" .
    [1 0 0 0 0 0 0 0 0 0])
-  ("bar" .
+  ("term_id" .
+   [1 0 0 0 0 0 0])
+  (":course" .
+   [1 0 0 0 0 0 0])
+  ("create" .
+   [1 0 0 0 0 0])
+  ("post_params" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("errors" .
+   [2 0 0 0 0 0])
+  ("this" .
+   [14 0 0 0])
+  ("hidePrimarySubjects" .
+   [1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("options" .
+   [3 0 0 0 0 0 0])
+  ("var" .
    [2 0 0])
-  ("responseText" .
-   [2 0 0 0 1 0 0 0 0 0 0 0])
-  ("JSON" .
+  ("wrapPrimitive" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("%=" .
+   [1 0])
+  ("model.get" .
+   [1 0 0 0 0 0 0 0 0])
+  ("'name'" .
+   [2 0 0 0 0 0])
+  ("course" .
+   [3 0 0 0 0 0])
+  ("handleJoinCourseClick" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0])
+  ("alert" .
+   [2 0 0 0 0])
+  ("regCode" .
+   [4 0 0 0 0 0 0])
+  ("success" .
+   [4 0 0 0 0 0 0])
+  ("error" .
+   [3 0 0 0 0])
+  ("noop" .
+   [4 0 0 0])
+  ("Course" .
+   [1 0 0 0 0 0])
+  ("Models" .
+   [1 0 0 0 0 0])
+  ("search" .
+   [1 0 0 0 0 0])
+  ("register" .
+   [1 0 0 0 0 0 0 0])
+  ("handleJoinCourseClickSuccess" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Messenger" .
+   [1 0 0 0 0 0 0 0 0])
+  ("get" .
+   [2 0 0])
+  ("callbacks" .
+   [1 0 0 0 0 0 0 0 0])
+  ("response" .
+   [4 0 0 0 0 0 0 0])
+  ("collection" .
+   [3 0 0 0 0 0 0 0 0 0])
+  ("Collections" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("Courses" .
+   [1 0 0 0 0 0 0])
+  ("fetch" .
+   [1 0 0 0 0])
+  ("templateData" .
+   [1 0 0 0 0 0 0 0 1 0 0 0])
+  ("index" .
+   [6 0 0 0 0])
+  ("archived" .
+   [1 0 0 0 0 0 0 0])
+  ("activity.get" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("el" .
+   [1 0])
+  ("render" .
+   [3 0 0 0 0 0])
+  ("/li" .
+   [1 0 0])
+  ("editor_selector" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("class=" .
+   [1 0 0 0 0 0])
+  ("publish_to_active_assignments" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("html" .
    [1 0 0 0])
-  ("parse" .
-   [1 0 0 0 0])))
+  ("template" .
+   [1 0 0 0 0 0 0 0])
+  ("%p" .
+   [1 0])
+  ("you" .
+   [1 0 0])
+  ("getTemplate" .
+   [1 0 0 0 0 0 0 0 0 0 0])))

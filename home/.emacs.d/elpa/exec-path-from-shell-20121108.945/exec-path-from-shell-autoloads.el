@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (exec-path-from-shell-initialize exec-path-from-shell-copy-env)
-;;;;;;  "exec-path-from-shell" "exec-path-from-shell.el" (20745 60554))
-;;; Generated autoloads from exec-path-from-shell.el
+;;;;;;  "exec-path-from-shell" "../../../../../../../.emacs.d/elpa/exec-path-from-shell-20121108.945/exec-path-from-shell.el"
+;;;;;;  "0a5b06ddddacf60c2c53d1daa5c04557")
+;;; Generated autoloads from ../../../../../../../.emacs.d/elpa/exec-path-from-shell-20121108.945/exec-path-from-shell.el
 
 (autoload 'exec-path-from-shell-copy-env "exec-path-from-shell" "\
 Set the environment variable $NAME from the user's shell.
@@ -27,8 +28,9 @@ values used in the user's shell.
 
 ;;;***
 
-;;;### (autoloads nil nil ("exec-path-from-shell-pkg.el") (20745
-;;;;;;  60554 852661))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/exec-path-from-shell-20121108.945/exec-path-from-shell-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/exec-path-from-shell-20121108.945/exec-path-from-shell.el")
+;;;;;;  (20812 35948 574477 0))
 
 ;;;***
 

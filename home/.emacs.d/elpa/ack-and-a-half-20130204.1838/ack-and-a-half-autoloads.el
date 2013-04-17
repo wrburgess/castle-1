@@ -4,9 +4,9 @@
 
 
 ;;;### (autoloads (ack-and-a-half-find-file-same ack-and-a-half-find-file
-;;;;;;  ack-and-a-half-same ack-and-a-half) "ack-and-a-half" "ack-and-a-half.el"
-;;;;;;  (20756 4993))
-;;; Generated autoloads from ack-and-a-half.el
+;;;;;;  ack-and-a-half-same ack-and-a-half) "ack-and-a-half" "../../../../../../../.emacs.d/elpa/ack-and-a-half-20130204.1838/ack-and-a-half.el"
+;;;;;;  "d6319951633d03aadbeb046b5716e862")
+;;; Generated autoloads from ../../../../../../../.emacs.d/elpa/ack-and-a-half-20130204.1838/ack-and-a-half.el
 
 (autoload 'ack-and-a-half "ack-and-a-half" "\
 Run ack.
@@ -48,7 +48,9 @@ Prompt to find a file found by ack in DIRECTORY.
 
 ;;;***
 
-;;;### (autoloads nil nil ("ack-and-a-half-pkg.el") (20756 4993 153985))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/ack-and-a-half-20130204.1838/ack-and-a-half-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/ack-and-a-half-20130204.1838/ack-and-a-half.el")
+;;;;;;  (20812 35946 921040 0))
 
 ;;;***
 
