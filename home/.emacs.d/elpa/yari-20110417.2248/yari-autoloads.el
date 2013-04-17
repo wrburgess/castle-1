@@ -3,25 +3,6 @@
 ;;; Code:
 
 
-;;;### (autoloads (yari yari-anything) "yari" "yari.el" (20746 39282))
-;;; Generated autoloads from yari.el
-
-(autoload 'yari-anything "yari" "\
-
-
-\(fn &optional REHASH)" t nil)
-
-(autoload 'yari "yari" "\
-Look up Ruby documentation.
-
-\(fn &optional RI-TOPIC REHASH)" t nil)
-
-;;;***
-
-;;;### (autoloads nil nil ("yari-pkg.el") (20746 39282 505398))
-
-;;;***
-
 (provide 'yari-autoloads)
 ;; Local Variables:
 ;; version-control: never

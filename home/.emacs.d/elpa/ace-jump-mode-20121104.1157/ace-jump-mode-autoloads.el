@@ -5,8 +5,9 @@
 
 ;;;### (autoloads (ace-jump-mode ace-jump-line-mode ace-jump-word-mode
 ;;;;;;  ace-jump-char-mode ace-jump-mode-pop-mark) "ace-jump-mode"
-;;;;;;  "ace-jump-mode.el" (20745 60554))
-;;; Generated autoloads from ace-jump-mode.el
+;;;;;;  "../../../../../../../.emacs.d/elpa/ace-jump-mode-20121104.1157/ace-jump-mode.el"
+;;;;;;  "c1eaf61b0be4eff0a81705df9053e657")
+;;; Generated autoloads from ../../../../../../../.emacs.d/elpa/ace-jump-mode-20121104.1157/ace-jump-mode.el
 
 (autoload 'ace-jump-mode-pop-mark "ace-jump-mode" "\
 Pop up a postion from `ace-jump-mode-mark-ring', and jump back to that position
@@ -56,7 +57,9 @@ You can constrol whether use the case sensitive via
 
 ;;;***
 
-;;;### (autoloads nil nil ("ace-jump-mode-pkg.el") (20745 60554 84134))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/ace-jump-mode-20121104.1157/ace-jump-mode-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/ace-jump-mode-20121104.1157/ace-jump-mode.el")
+;;;;;;  (20812 35945 282292 0))
 
 ;;;***
 

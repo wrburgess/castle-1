@@ -3,24 +3,6 @@
 ;;; Code:
 
 
-;;;### (autoloads (scss-mode) "scss-mode" "scss-mode.el" (20746 40569))
-;;; Generated autoloads from scss-mode.el
-
-(autoload 'scss-mode "scss-mode" "\
-Major mode for editing SCSS files, http://sass-lang.com/
-Special commands:
-\\{scss-mode-map}
-
-\(fn)" t nil)
-
-(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
-
-;;;***
-
-;;;### (autoloads nil nil ("scss-mode-pkg.el") (20746 40569 501552))
-
-;;;***
-
 (provide 'scss-mode-autoloads)
 ;; Local Variables:
 ;; version-control: never

@@ -4,8 +4,9 @@
 
 
 ;;;### (autoloads (package-filter package-filter-function package-archive-exclude-alist
-;;;;;;  package-archive-enable-alist) "melpa" "melpa.el" (20745 60569))
-;;; Generated autoloads from melpa.el
+;;;;;;  package-archive-enable-alist) "melpa" "../../../../../../../.emacs.d/elpa/melpa-20120202.1322/melpa.el"
+;;;;;;  "657017c495e643f66824a2f30331cc51")
+;;; Generated autoloads from ../../../../../../../.emacs.d/elpa/melpa-20120202.1322/melpa.el
 
 (defvar package-archive-enable-alist nil "\
 Optional Alist of enabled packages used by `package-filter'.
@@ -60,7 +61,9 @@ Filter packages in the associated list for `archive' in
 
 ;;;***
 
-;;;### (autoloads nil nil ("melpa-pkg.el") (20745 60569 719150))
+;;;### (autoloads nil nil ("../../../../../../../.emacs.d/elpa/melpa-20120202.1322/melpa-pkg.el"
+;;;;;;  "../../../../../../../.emacs.d/elpa/melpa-20120202.1322/melpa.el")
+;;;;;;  (20812 36017 347926 0))
 
 ;;;***
 

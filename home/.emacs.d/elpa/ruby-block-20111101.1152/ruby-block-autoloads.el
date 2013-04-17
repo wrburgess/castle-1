@@ -3,11 +3,6 @@
 ;;; Code:
 
 
-;;;### (autoloads nil nil ("ruby-block-pkg.el" "ruby-block.el") (20746
-;;;;;;  39283 840001))
-
-;;;***
-
 (provide 'ruby-block-autoloads)
 ;; Local Variables:
 ;; version-control: never

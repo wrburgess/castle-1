@@ -45,25 +45,15 @@ if [ -f ~/.shunit2 ]
    source ~/.shunit2
 fi
 
-# Load chruby
-if [ -f /usr/local/opt/chruby/share/chruby/chruby.sh ]; then
-  source /usr/local/opt/chruby/share/chruby/chruby.sh
+export RBENV_ROOT="${HOME}/.rbenv"
+
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init - --no-rehash)"
 fi
-
-# Auto load rubies
-if [ -f /usr/local/opt/chruby/share/chruby/auto.sh ]; then
-  source /usr/local/opt/chruby/share/chruby/auto.sh
-fi
-
-RUBIES=(~/.rubies/*)
-chruby 1.9.3
-
-# auto-gemsets
-source ~/Development/auto-gemsets/lib/auto-gemsets/auto-gemsets.sh
-source ~/Development/auto-gemsets/lib/auto-gemsets/default-gems.sh
-
 # Prompt
-prompt="\[$green\]\w:\[$end\] "
+
+prompt="\[$green\]\w 👊 \[$end\] "
 
 PS1="$prompt"
 git_branch="\[$yellow\]\`ruby -e \"print (%x{git branch 2> /dev/null}.split(%r{\n}).grep(/^\*/).first || '').gsub(/^\* (.+)$/, '\1')\"\`\[$end\] "
