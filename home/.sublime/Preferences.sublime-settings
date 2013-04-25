@@ -58,7 +58,6 @@
 	"soda_classic_tabs": true,
 	"spell_check": false,
 	"tab_size": 2,
-	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": false

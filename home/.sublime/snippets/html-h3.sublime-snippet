@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<h3>$0</h3>
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>h3</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.html</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>HTML h3</description>
+</snippet>

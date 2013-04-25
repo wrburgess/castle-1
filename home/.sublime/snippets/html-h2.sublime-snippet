@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<h2${1: id="$2"}${3: class="$4"}>$0</h2>
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>h2</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text.html</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Template Snippet</description>
+</snippet>
