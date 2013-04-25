@@ -53,7 +53,7 @@ if [ -d "${RBENV_ROOT}" ]; then
 fi
 # Prompt
 
-prompt="\[$green\]\w 👊 \[$end\] "
+prompt="\[$green\]\w\[$end\] "
 
 PS1="$prompt"
 git_branch="\[$yellow\]\`ruby -e \"print (%x{git branch 2> /dev/null}.split(%r{\n}).grep(/^\*/).first || '').gsub(/^\* (.+)$/, '\1')\"\`\[$end\] "
