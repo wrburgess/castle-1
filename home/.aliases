@@ -32,7 +32,7 @@ alias db='cd ~/Dropbox'
 alias scripts="cd ~/Dropbox/Scripts"
 alias c="clear"
 alias appsup="cd ~/Library/Application\ Support/"
-alias fm="foreman "
+alias fm="foreman start"
 alias fml="foreman start -f Procfile.local"
 alias tree="tree --dirsfirst -lFC"
 alias less="less -r "
@@ -43,6 +43,8 @@ alias diff="colordiff"
 alias h="history"
 alias q="exit"
 alias emc="cd ~/.emacs.d/personal"
+alias unicorn-stampeed="for i in {1..10}; do { unicornleap & }  ;  sleep 0.5; done"
+alias stampeed="for i in {1..10}; do { unicornleap & }  ;  sleep 0.5; done"
 
 #Settings
 #alias brc='open ~/.bashrc -a "Sublime Text 2"'
@@ -51,7 +53,7 @@ alias bp='open ~/.bash_profile -a "Sublime Text 2"'
 alias bfn='open ~/.bash_functions -a "Sublime Text 2"'
 alias als='open ~/.aliases -a "Sublime Text 2"'
 alias ev='open ~/.env -a "Sublime Text 2"'
-alias reload='source ~/.bash_profile;'
+alias reload='source ~/.env; source ~/.bash_profile;'
 alias sh='bash'
 alias hmsik="cd ~/.homesick/repos/castle"
 
