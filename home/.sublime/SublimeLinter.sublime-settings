@@ -136,7 +136,10 @@
             "DaytonNolan": false,
             "initRTE": false,
             "CreativeConstraints": false,
-            "rand": false
+            "rand": false,
+            "currentUser": false,
+            "isTypeOf": false,
+            "isNotTypeOf": false
         },
         "indent": 2,
         "trailing": true,
@@ -165,7 +168,9 @@
         "sub": true,
         "strict": false,
         "white": false,
-        "unused": true
+        "unused": true,
+        "expr": true,
+        "supernew": true
     },
 
     // A list of command line options to send to gjslint. --nobeep is always sent.

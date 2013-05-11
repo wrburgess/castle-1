@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+each ${1:do}${2: |$3| }
+  $0
+end
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>each</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.ruby</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Ruby each</description>
+</snippet>

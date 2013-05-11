@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+it('$1', function() {
+  $0
+});
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>it</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.js</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Jasmine it function</description>
+</snippet>

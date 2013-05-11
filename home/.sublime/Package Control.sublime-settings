@@ -3,7 +3,9 @@
 	[
 		"AdvancedNewFile",
 		"All Autocomplete",
+		"BracketHighlighter",
 		"cdnjs",
+		"ChangeQuotes",
 		"CoffeeScript",
 		"ColorPick",
 		"DashDoc",
@@ -18,10 +20,12 @@
 		"Rails Latest Migration",
 		"RSpec (snippets and syntax)",
 		"RspecBuild",
+		"RubyMotionBuilder",
 		"RubyTest",
 		"SCSS",
 		"SetSyntax",
 		"SideBarEnhancements",
-		"SublimeLinter"
+		"SublimeLinter",
+		"ToggleQuotes"
 	]
 }

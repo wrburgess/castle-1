@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+expect($1).to$0
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>expect</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.js</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Jasmine expect</description>
+</snippet>

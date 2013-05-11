@@ -1,8 +1,9 @@
 {
   "bracket_styles": {
     "default": {
-      "color": "comment",
-      "style": "none"
+      "color": "brackethighlighter.default",
+      "style": "none",
+      "icon": "dot"
     }
   }
 }

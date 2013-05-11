@@ -72,6 +72,7 @@
   { "keys": ["super+ctrl+x"], "command": "list_rails_fixtures" },
   { "keys": ["super+ctrl+t"], "command": "list_rails_tests" },
   { "keys": ["super+ctrl+i"], "command": "list_rails_javascripts" },
-  { "keys": ["super+ctrl+y"], "command": "list_rails_stylesheets" }
-
+  { "keys": ["super+ctrl+y"], "command": "list_rails_stylesheets" },
+  // Change quotes
+  { "keys": ["ctrl+shift+'"], "command": "change_quotes" }
 ]
