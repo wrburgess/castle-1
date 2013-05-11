@@ -17,6 +17,7 @@ alias src='cd /usr/local/src'
 alias bin='cd /usr/local/bin'
 alias t='touch '
 alias snips="ls -a ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/snippets | cat"
+alias snippets="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/snippets"
 
 #Shortcuts
 alias ~="cd ~"
