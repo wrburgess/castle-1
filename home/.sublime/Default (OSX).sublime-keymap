@@ -1,11 +1,16 @@
 [
+  // Rename file
+  { "keys": ["super+alt+ctrl+shift+r"], "command": "side_bar_rename" },
+  // Skip next selection cmd+d
+  { "keys": ["shift+ctrl+super+d"], "command": "find_under_expand_skip" },
   // Upper/Lower case
-  { "keys": ["super+alt+u"], "command": "upper_case" },
+  { "keys": ["super+alt+u"], "command": "title_case" },
+  { "keys": ["super+alt+ctrl+u"], "command": "upper_case" },
   { "keys": ["super+alt+l"], "command": "lower_case" },
   // Hash rocket
-  { "keys": ["super+alt="], "command": "insert_snippet", "args": {"contents": "=>"} },
+  { "keys": ["super+alt+="], "command": "insert_snippet", "args": {"contents": "=>"} },
   // Symbolize selection
-  { "keys": ["super+shift+;"], "command": "insert_snippet", "args": {"name": "Packages/User/ruby-symbol.sublime-snippet"}},
+  { "keys": ["super+shift+;"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-symbol.sublime-snippet"}},
   // TextMate style drawer toggle
 	{ "keys": ["ctrl+super+alt+d"], "command": "toggle_side_bar" },
   // Toggle Mini Map
@@ -16,6 +21,8 @@
   { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace"} },
   { "keys": ["super+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
   { "keys": ["super+alt+f"], "command": "replace_next" },
+  { "keys": ["super+g"], "command": "find_next" },
+  { "keys": ["super+shift+g"], "command": "find_prev" },
   // Sublime linter
   { "keys": ["ctrl+super+l"], "command": "sublimelinter_show_errors", "args": {"action": "lint", "show_popup": true} },
   // Custom tab and pane navigation
@@ -64,15 +71,8 @@
   { "keys": ["f5"], "command": "sort_lines", "args": {"case_sensitive": false} },
   // Quick File Creation
   { "keys": ["super+n"], "command": "advanced_new_file"},
-
-  { "keys": ["super+ctrl+m"], "command": "list_rails_models" },
-  { "keys": ["super+ctrl+c"], "command": "list_rails_controllers" },
-  { "keys": ["super+ctrl+v"], "command": "list_rails_views" },
-  { "keys": ["super+ctrl+h"], "command": "list_rails_helpers" },
-  { "keys": ["super+ctrl+x"], "command": "list_rails_fixtures" },
-  { "keys": ["super+ctrl+t"], "command": "list_rails_tests" },
-  { "keys": ["super+ctrl+i"], "command": "list_rails_javascripts" },
-  { "keys": ["super+ctrl+y"], "command": "list_rails_stylesheets" },
   // Change quotes
-  { "keys": ["ctrl+shift+'"], "command": "change_quotes" }
+  { "keys": ["ctrl+shift+'"], "command": "change_quotes" },
+  // Color picker
+  { "keys": ["super+alt+c"], "command": "color_pick" }
 ]

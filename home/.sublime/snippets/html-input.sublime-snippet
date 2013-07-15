@@ -1,16 +1,11 @@
 <snippet>
     <content><![CDATA[
-if ($2) {
-  $3
-}${1: else \{
-  $4
-\}
-}
+<input type="${1:text}" name="$2"${3: id="${4:$2-field}"}${5: class="$6"}${7: value="$0"} />
 ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
-    <tabTrigger>if</tabTrigger>
+    <tabTrigger>input</tabTrigger>
     <!-- Optional: Scope the tab trigger will be active in -->
-    <scope>source.js</scope>
+    <scope>text.html</scope>
     <!-- Optional: Description to show in the menu -->
-    <description>JavaScript if</description>
+    <description>HTML input tag</description>
 </snippet>

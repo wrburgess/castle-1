@@ -1,16 +1,11 @@
 <snippet>
     <content><![CDATA[
-if ($2) {
-  $3
-}${1: else \{
-  $4
-\}
-}
+<textarea name="$1"${2: id="${3:$1-field}"}${4: class="$5"}>$0</textarea>
 ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
-    <tabTrigger>if</tabTrigger>
+    <tabTrigger>textarea</tabTrigger>
     <!-- Optional: Scope the tab trigger will be active in -->
-    <scope>source.js</scope>
+    <scope>text.html</scope>
     <!-- Optional: Description to show in the menu -->
-    <description>JavaScript if</description>
+    <description>HTML textarea</description>
 </snippet>

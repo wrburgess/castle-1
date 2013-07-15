@@ -1,4 +1,3 @@
-#require "pry"
 require "fileutils"
 
 module SubSnip
@@ -34,6 +33,10 @@ eos
       end
     end
 
+    def text_categories
+      @text_categories ||= ['html']
+    end
+
     def category
       only_one_argument? ? "All" : @args.first
     end
@@ -64,7 +67,7 @@ eos
     end
 
     def snippet_content
-        <<-eos
+      <<-eos
 <snippet>
     <content><![CDATA[
 #{snippet_source}
@@ -86,6 +89,8 @@ eos
     def snippet_scope
       if only_one_argument?
         "<!-- <scope>source.ruby</scope> -->"
+      elsif text_categories.include? category.downcase
+        "<scope>text.#{category.downcase}</scope>"
       else
         "<scope>source.#{category.downcase}</scope>"
       end

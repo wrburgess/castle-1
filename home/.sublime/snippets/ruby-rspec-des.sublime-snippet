@@ -1,16 +1,13 @@
 <snippet>
     <content><![CDATA[
-if ($2) {
-  $3
-}${1: else \{
-  $4
-\}
-}
+describe ${1:"$2"} do
+  $0
+end
 ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
-    <tabTrigger>if</tabTrigger>
+    <tabTrigger>des</tabTrigger>
     <!-- Optional: Scope the tab trigger will be active in -->
-    <scope>source.js</scope>
+    <scope>source.ruby</scope>
     <!-- Optional: Description to show in the menu -->
-    <description>JavaScript if</description>
+    <description>Rspec describe</description>
 </snippet>

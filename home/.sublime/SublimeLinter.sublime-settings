@@ -54,7 +54,10 @@
     // An array of linter names to disable. Names should be lowercase.
     "sublimelinter_disable":
     [
-        "ruby"
+        "ruby",
+        "haml",
+        "css",
+        "html"
     ],
 
     /*
@@ -65,7 +68,7 @@
         errors are erased when the file is modified, since the assumption is
         you don't want to see errors while you type.
     */
-    "sublimelinter_delay": 1,
+    "sublimelinter_delay": 5,
 
     /*
         Selects the way the lines with errors or warnings are marked; "outline"
@@ -130,6 +133,10 @@
             "chrome": false,
             "App": false,
             "tinyMCE": false,
+            "sinon": false,
+            "SyntaxHighlighter": false,
+            "sandbox": false,
+            "affix": false,
             // Custom globals
             "Icurio": false,
             "Spellbook": false,
@@ -139,7 +146,8 @@
             "rand": false,
             "currentUser": false,
             "isTypeOf": false,
-            "isNotTypeOf": false
+            "isNotTypeOf": false,
+            "findRTEBySelector": false
         },
         "indent": 2,
         "trailing": true,

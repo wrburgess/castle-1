@@ -1,16 +1,11 @@
 <snippet>
     <content><![CDATA[
-if ($2) {
-  $3
-}${1: else \{
-  $4
-\}
-}
+screenshot_and_open_image
 ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
-    <tabTrigger>if</tabTrigger>
+    <tabTrigger>screenshot</tabTrigger>
     <!-- Optional: Scope the tab trigger will be active in -->
-    <scope>source.js</scope>
+    <scope>source.ruby</scope>
     <!-- Optional: Description to show in the menu -->
-    <description>JavaScript if</description>
+    <description>Rspec capybara screenshot</description>
 </snippet>

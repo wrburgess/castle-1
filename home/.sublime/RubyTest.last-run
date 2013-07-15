@@ -1,4 +1,4 @@
 {
-	"last_test_run": "ALL_TESTS=true rspec spec/controllers/gists_controller_spec.rb -l20",
-	"last_test_working_dir": "/Users/daytonn/Development/spellbook"
+	"last_test_run": "ALL_TESTS=true rspec spec/features/listing_spec.rb -l23",
+	"last_test_working_dir": "/Users/daytonn/Development/ontheblock"
 }

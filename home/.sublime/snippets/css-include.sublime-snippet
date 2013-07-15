@@ -1,13 +1,11 @@
 <snippet>
     <content><![CDATA[
-describe ${1:'$2'} do
-  $0
-end
+@include $0;
 ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
-    <tabTrigger>des</tabTrigger>
+    <tabTrigger>inc</tabTrigger>
     <!-- Optional: Scope the tab trigger will be active in -->
-    <scope>source.ruby</scope>
+    <scope>source.css</scope>
     <!-- Optional: Description to show in the menu -->
-    <description>Rspec describe</description>
+    <description>Sass include</description>
 </snippet>

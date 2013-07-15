@@ -9,14 +9,15 @@ function d {
 function bundle {
   bundler_cmd=`which bundle`
   if [ -z "$1" ] || [ "$1" == "install" ]; then
-    if [ ! -d ./bin ] || [ ! -d ./.bundle/bin ]; then
-      $bundler_cmd --binstubs
+    if [ ! -d ./.bundle/bin ]; then
+      $bundler_cmd --binstubs .bundle/bin
     else
       $bundler_cmd
     fi
   else
     $bundler_cmd "$@"
   fi
+  rbenv rehash
 }
 
 function gem {

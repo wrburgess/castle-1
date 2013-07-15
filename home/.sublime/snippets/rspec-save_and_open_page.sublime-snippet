@@ -1,16 +1,11 @@
 <snippet>
     <content><![CDATA[
-if ($2) {
-  $3
-}${1: else \{
-  $4
-\}
-}
+save_and_open_page
 ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
-    <tabTrigger>if</tabTrigger>
+    <tabTrigger>save</tabTrigger>
     <!-- Optional: Scope the tab trigger will be active in -->
-    <scope>source.js</scope>
+    <scope>source.ruby</scope>
     <!-- Optional: Description to show in the menu -->
-    <description>JavaScript if</description>
+    <description>save_and_open_page capybara method</description>
 </snippet>

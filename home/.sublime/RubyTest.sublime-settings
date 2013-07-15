@@ -19,7 +19,7 @@
   "check_for_rvm": false,
 
   "ruby_use_scratch" : false,
-  "save_on_run": false,
+  "save_on_run": true,
   "ignored_directories": [".git", "vendor", "tmp"],
 
   "hide_panel": false,

@@ -1,31 +1,24 @@
 {
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"AdvancedNewFile",
 		"All Autocomplete",
-		"BracketHighlighter",
-		"cdnjs",
 		"ChangeQuotes",
-		"CoffeeScript",
 		"ColorPick",
-		"DashDoc",
 		"EJS",
 		"Gist",
+		"Git",
 		"GitGutter",
 		"Haml",
-		"Handlebars",
 		"HTML2Haml",
-		"JavaScript Refactor",
+		"Markdown Preview",
+		"nginx",
 		"Package Control",
 		"Rails Latest Migration",
-		"RSpec (snippets and syntax)",
-		"RspecBuild",
-		"RubyMotionBuilder",
 		"RubyTest",
 		"SCSS",
 		"SetSyntax",
 		"SideBarEnhancements",
-		"SublimeLinter",
-		"ToggleQuotes"
+		"SublimeLinter"
 	]
 }
