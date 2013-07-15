@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
-require "~/.homesick/repos/castle/scripts/subsnip/lib/subsnip"
+$: << File.join(File.expand_path('../..', File.readlink(__FILE__)), 'lib')
+require "subsnip"
 SubSnip::application.run
