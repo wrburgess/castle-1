@@ -87,6 +87,14 @@ function s {
   fi
 }
 
+function e {
+  if [ -n "$1" ]; then
+    open "$1" -a "Emacs"
+  else
+    open "./" -a "Emacs"
+  fi
+}
+
 function badtouch {
   if [ ! -f "$1" ]; then
     touch $1
