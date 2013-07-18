@@ -1,4 +1,0 @@
-# name: console.log
-# key: log
-# --
-console.log(${1:"$0"});

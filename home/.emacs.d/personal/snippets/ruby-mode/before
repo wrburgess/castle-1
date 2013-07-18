@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: bef
-# --
-before do
-  $0
-end
