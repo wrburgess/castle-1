@@ -1,6 +1,0 @@
-# name: describe
-# key: describe
-# --
-describe ${1:"$2"} do
-  $0
-end

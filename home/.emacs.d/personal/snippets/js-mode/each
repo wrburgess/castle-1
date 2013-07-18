@@ -1,6 +1,0 @@
-# name: each
-# key: each
-# --
-each(function(${1:item}) {
-	${2:$1}
-});
