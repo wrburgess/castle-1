@@ -8,8 +8,8 @@
   "run_cucumber_command": "cucumber {relative_path}",
   "run_single_cucumber_command": "cucumber {relative_path} -l{line_number}",
 
-  "run_rspec_command": "ALL_TESTS=true rspec {relative_path}",
-  "run_single_rspec_command": "ALL_TESTS=true rspec {relative_path} -l{line_number}",
+  "run_rspec_command": "bundle exec rspec --no-color --format p --format UnicornFormatter {relative_path}",
+  "run_single_rspec_command": "bundle exec rspec --no-color --format p  --format UnicornFormatter {relative_path} -l{line_number}",
 
   "ruby_unit_folder": "test",
   "ruby_cucumber_folder": "features",
@@ -25,5 +25,7 @@
   "hide_panel": false,
 
   "before_callback": "",
-  "after_callback": ""
+  "after_callback": "",
+
+  "theme": "Packages/User/themes/NeopolitanTestConsole.tmTheme"
 }

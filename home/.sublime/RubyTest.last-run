@@ -1,4 +1,4 @@
 {
-	"last_test_run": "ALL_TESTS=true rspec spec/features/listing_spec.rb -l23",
-	"last_test_working_dir": "/Users/daytonn/Development/ontheblock"
+	"last_test_run": "bundle exec rspec --no-color --format p  --format UnicornFormatter spec/controllers/blog_controller_spec.rb -l11",
+	"last_test_working_dir": "/Users/daytonn/Development/daytonnolan"
 }

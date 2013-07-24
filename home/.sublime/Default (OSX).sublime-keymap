@@ -9,8 +9,14 @@
   { "keys": ["super+alt+l"], "command": "lower_case" },
   // Hash rocket
   { "keys": ["super+alt+="], "command": "insert_snippet", "args": {"contents": "=>"} },
-  // Symbolize selection
-  { "keys": ["super+shift+;"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-symbol.sublime-snippet"}},
+  // Paramify
+  { "keys": ["ctrl+shift+p"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-paramify.sublime-snippet"} },
+  // Unparamify
+  { "keys": ["ctrl+shift+super+p"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-unparamify.sublime-snippet"} },
+  // Symbolize
+  { "keys": ["ctrl+shift+;"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-symbolize.sublime-snippet"} },
+  // Unsymbolize
+  { "keys": ["super+shift+'"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-unsymbolize.sublime-snippet"} },
   // TextMate style drawer toggle
 	{ "keys": ["ctrl+super+alt+d"], "command": "toggle_side_bar" },
   // Toggle Mini Map

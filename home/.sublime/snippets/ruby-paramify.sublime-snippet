@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+params[:${SELECTION/"|'|^://g}]
+]]></content>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.ruby</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Wrap in params</description>
+</snippet>
