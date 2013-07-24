@@ -6,6 +6,18 @@ function d {
   fi
 }
 
+function stfu {
+  open -a Flowdock
+  open -a "AirMail Beta"
+  open -a localhost:300 -a "Google Chrome"
+  cd ~/Development/$CURRENT_PROJECT
+  if [[ -n "$1" ]]; then
+    $($1 .)
+  else
+    s .
+  fi
+}
+
 function bundle {
   bundler_cmd=`which bundle`
   if [ -z "$1" ] || [ "$1" == "install" ]; then

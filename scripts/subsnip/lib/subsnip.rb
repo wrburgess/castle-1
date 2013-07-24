@@ -34,7 +34,7 @@ eos
     end
 
     def text_categories
-      @text_categories ||= ['html']
+      @text_categories ||= ['html', 'haml']
     end
 
     def category
