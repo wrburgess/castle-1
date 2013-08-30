@@ -6,11 +6,15 @@ function d {
   fi
 }
 
+function project {
+  cd ~/Development/$CURRENT_PROJECT
+}
+
 function stfu {
   open -a Flowdock
-  open -a "AirMail Beta"
+  open -a Airmail
   open -a localhost:300 -a "Google Chrome"
-  cd ~/Development/$CURRENT_PROJECT
+  project
   if [[ -n "$1" ]]; then
     $($1 .)
   else
@@ -295,4 +299,3 @@ function loop {
      echo  -ne "$i"
   done
 }
-

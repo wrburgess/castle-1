@@ -9,8 +9,12 @@
   { "keys": ["super+alt+l"], "command": "lower_case" },
   // Hash rocket
   { "keys": ["super+alt+="], "command": "insert_snippet", "args": {"contents": "=>"} },
+  // Arrow
+  { "keys": ["super+alt+-"], "command": "insert_snippet", "args": {"contents": "->"} },
   // Paramify
   { "keys": ["ctrl+shift+p"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-paramify.sublime-snippet"} },
+  // Letify
+  { "keys": ["ctrl+shift+l"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-let.sublime-snippet"} },
   // Unparamify
   { "keys": ["ctrl+shift+super+p"], "command": "insert_snippet", "args": {"name": "Packages/User/snippets/ruby-unparamify.sublime-snippet"} },
   // Symbolize

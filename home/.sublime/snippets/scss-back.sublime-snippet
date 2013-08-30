@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+background: {
+  $0
+}
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>back</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.scss</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>SCSS Background</description>
+</snippet>

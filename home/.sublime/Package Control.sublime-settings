@@ -3,9 +3,9 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Better CoffeeScript",
 		"ChangeQuotes",
 		"ColorPick",
-		"EJS",
 		"Gist",
 		"Git",
 		"GitGutter",
@@ -20,6 +20,7 @@
 		"SCSS",
 		"SetSyntax",
 		"SideBarEnhancements",
-		"SublimeLinter"
+		"SublimeLinter",
+		"Todo Manager"
 	]
 }

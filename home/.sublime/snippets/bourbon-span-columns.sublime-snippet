@@ -1,13 +1,11 @@
 <snippet>
     <content><![CDATA[
-<select name="$1"${2: id="${3:$1-field}"}${4: class="$5"}>
-  ${0:<option>Choose an option</option>}
-</select>
+@include span-columns($1 of ${2:12});
 ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
-    <tabTrigger>select</tabTrigger>
+    <tabTrigger>sc</tabTrigger>
     <!-- Optional: Scope the tab trigger will be active in -->
-    <scope>text.html, text.haml</scope>
+    <scope>source.scss</scope>
     <!-- Optional: Description to show in the menu -->
-    <description>HTML select tag</description>
+    <description>Bourbon span-columns mixin</description>
 </snippet>

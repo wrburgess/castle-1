@@ -137,6 +137,7 @@
             "SyntaxHighlighter": false,
             "sandbox": false,
             "affix": false,
+            "JST": false,
             // Custom globals
             "Icurio": false,
             "Spellbook": false,
