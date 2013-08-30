@@ -44,8 +44,7 @@ alias sha1='openssl sha1'
 alias diff="colordiff"
 alias q="exit"
 alias emc="cd ~/.emacs.d/personal"
-alias unicorn-stampeed="for i in {1..10}; do { unicornleap & }  ;  sleep 0.5; done"
-alias stampeed="for i in {1..10}; do { unicornleap & }  ;  sleep 0.5; done"
+alias stampede="for i in {1..10}; do { unicornleap & }  ;  sleep 0.5; done"
 
 #Settings
 #alias brc='open ~/.bashrc -a "Sublime Text 2"'
@@ -114,6 +113,7 @@ alias seed="rake db:seed"
 alias create="rake db:create"
 alias drop="rake db:drop"
 alias cmps="rake db:create db:migrate db:test:prepare db:seed"
+alias dcmps="rake db:drop db:create db:migrate db:test:prepare db:seed"
 
 # Color
 alias grep="grep --color=auto"
@@ -123,7 +123,7 @@ alias tag-rails="ctags -a -e -f TAGS --tag-relative -R app lib"
 
 # Scripts
 alias rversion="~/.homesick/repos/castle/scripts/rversion/bin/rversion"
-
+alias bones="~/Development/bones/bin/bones"
 # RubyMotion
 
 alias mrake="rake retina=true"

@@ -1,3 +1,0 @@
-source "http://rubygems.org"
-
-gem 'moses', '0.1.2'
