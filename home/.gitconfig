@@ -2,13 +2,13 @@
 	name = Dayton Nolan
 	email = daytonn@gmail.com
 [credential]
-    helper = osxkeychain
+  helper = osxkeychain
 [mergetool]
 	keepBackup = true
 [github]
-    user = daytonn
+  user = daytonn
 [core]
-	editor = emacs
+  editor = subl
 [alias]
   torqued = reset --hard
 	co = checkout
