@@ -52,10 +52,13 @@ if [ -d "${RBENV_ROOT}" ]; then
   eval "$(rbenv init - --no-rehash)"
 fi
 # Prompt
+prompt_color="${lightblue}"
+git_dirty_color="${redb}"
+git_clean_color="${greenb}"
 
-prompt="\[$green\]\w ❯ \[$end\]"
+prompt="\[$prompt_color\]\w ❯ \[$end\]"
 PS1="${prompt}"
-PS2="\[$yello\] > \[$end\]"
+PS2="\[$yellow\]❯❯ \[$end\]"
 export PROMPT_COMMAND="git_prompt"
 # Make bash check it's window size after a process completes
 shopt -s checkwinsize

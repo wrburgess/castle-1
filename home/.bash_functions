@@ -360,22 +360,41 @@ function git_status_is_clean {
 
 function git_status_icon {
   if [[ $(git_status_is_clean) == "yes" ]]; then
-    echo "\[$greenb\]✓\[$en\]"
+    echo "\[$git_clean_color\]✓"
   else
-    echo "\[$redb\]✘\[$end\]"
+    echo "\[$yellow\]$(modified_file_count)\[$end\]:\[$green\]$(added_file_count)\[$end\]:\[$red\]$(deleted_file_count)\[$end\]"
   fi
+}
+
+function modified_file_count {
+  count=`git status | grep -o "modified" | wc -l | tr -d ' '`
+  echo "$count"
+}
+
+function added_file_count {
+  count=`git ls-files --others --exclude-standard | wc -l | tr -d " "`
+  echo "$count"
+}
+
+function deleted_file_count {
+  count=`git ls-files --deleted | wc -l | tr -d " "`
+  echo "$count"
 }
 
 function git_prompt {
   local branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
   if [ -n "$branch" ]; then
-    PS1="$(git_status_icon) \[$lightblue\]${branch}\[$end\] $(repo_prompt)"
+    PS1="$(git_status_icon) ${branch}\[$end\] $(repo_prompt)"
   else
     PS1="${prompt}"
   fi
 }
 
 function repo_prompt {
-  cprj_path="${PWD/${HOME}\/Development\//}"
-  echo "\[$green\]${cprj_path} ❯ \[$end\]"
+  if [[ $PWD == *"Development"* ]]; then
+    cprj_path="${PWD/${HOME}\/Development\//}"
+  else
+    cprj_path="${PWD/${HOME}\//}"
+  fi
+  echo "\[$prompt_color\]${cprj_path} ❯ \[$end\]"
 }
