@@ -1,4 +1,0 @@
-{
-	"last_test_run": "bundle exec rspec --no-color --format p --format UnicornFormatter spec/controllers/issues_controller_spec.rb",
-	"last_test_working_dir": "/Users/daytonn/Development/squared_away"
-}
