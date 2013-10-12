@@ -22,6 +22,45 @@ function stfu {
   fi
 }
 
+function sp {
+  SPEC_ROOT="spec"
+  FILE="$2"
+  LINE=""
+  if [[ -n "$3" ]]; then
+    for LINE; do true; done
+    LINE=":${LINE}"
+  fi
+  if [[ -n "$FILE" ]]; then
+    SUFFIX="_spec.rb"
+  else
+    SUFFIX=""
+  fi
+
+  case "$1" in
+  "c" )
+    if [[ -n "$FILE" ]]; then
+      FILE="${FILE}_controller"
+    fi
+    bundle exec rspec "${SPEC_ROOT}/controllers/${FILE}${SUFFIX}${LINE}" ;;
+  "m" )
+    bundle exec rspec "${SPEC_ROOT}/models/${FILE}${SUFFIX}${LINE}";;
+  "mm" )
+    if [[ -n "$FILE" ]]; then
+      FILE="${FILE}_mailer"
+    fi
+    bundle exec rspec "${SPEC_ROOT}/mailers/${FILE}${SUFFIX}${LINE}";;
+  "w" )
+    if [[ -n "$FILE" ]]; then
+      FILE="${FILE}_worker"
+    fi
+    bundle exec rspec "${SPEC_ROOT}/workers/${FILE}${SUFFIX}${LINE}" ;;
+  "" )
+    bundle exec rspec "${SPEC_ROOT}";;
+  * )
+    bundle exec rspec "${SPEC_ROOT}/${1}/${2}${SUFFIX}${LINE}";;
+  esac
+}
+
 function bundle {
   bundler_cmd=`which bundle`
   if [ -z "$1" ] || [ "$1" == "install" ]; then
@@ -84,14 +123,6 @@ function push {
     git push origin "$1"
   else
     git push origin master
-  fi
-}
-
-function rs {
-  if [ -n "$1" ]; then
-    rspec spec/"$1"_spec.rb
-  else
-    rspec spec
   fi
 }
 
@@ -205,6 +236,14 @@ function copy {
   fi
 }
 
+function add {
+  if [ -z "$1" ]; then
+    git add -p
+  else
+    git add "$@"
+  fi
+}
+
 function example {
   echo "\$# = $# (argument count)"
   echo "\$@ = $@ (arguments)"
@@ -298,4 +337,45 @@ function loop {
   do
      echo  -ne "$i"
   done
+}
+
+function brew {
+  brew_cmd=`which brew`
+  if [ "$1" == "install" ] || [ "$1" == "upgrade" ]; then
+      $brew_cmd update
+      $brew_cmd "$@"
+  else
+    $brew_cmd "$@"
+  fi
+}
+
+function git_status_is_clean {
+  local status=$(git st)
+  if [[ "$status" == *"working directory clean"* ]]; then
+    echo "yes"
+  else
+    echo "no"
+  fi
+}
+
+function git_status_icon {
+  if [[ $(git_status_is_clean) == "yes" ]]; then
+    echo "\[$greenb\]✓\[$en\]"
+  else
+    echo "\[$redb\]✘\[$end\]"
+  fi
+}
+
+function git_prompt {
+  local branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+  if [ -n "$branch" ]; then
+    PS1="$(git_status_icon) \[$lightblue\]${branch}\[$end\] $(repo_prompt)"
+  else
+    PS1="${prompt}"
+  fi
+}
+
+function repo_prompt {
+  cprj_path="${PWD/${HOME}\/Development\//}"
+  echo "\[$green\]${cprj_path} ❯ \[$end\]"
 }

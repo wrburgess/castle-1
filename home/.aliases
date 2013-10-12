@@ -47,12 +47,11 @@ alias emc="cd ~/.emacs.d/personal"
 alias stampede="for i in {1..10}; do { unicornleap & }  ;  sleep 0.5; done"
 
 #Settings
-#alias brc='open ~/.bashrc -a "Sublime Text 2"'
 alias brc="$EDITOR ~/.bashrc"
-alias bp='open ~/.bash_profile -a "Sublime Text 2"'
-alias bfn='open ~/.bash_functions -a "Sublime Text 2"'
-alias als='open ~/.aliases -a "Sublime Text 2"'
-alias ev='open ~/.env -a "Sublime Text 2"'
+alias bp='$EDITOR ~/.bash_profile'
+alias bfn='$EDITOR ~/.bash_functions'
+alias als='$EDITOR ~/.aliases'
+alias ev='$EDITOR ~/.env'
 alias reload='source ~/.env; source ~/.bash_profile;'
 alias sh='bash'
 alias hmsik="cd ~/.homesick/repos/castle"
@@ -69,13 +68,11 @@ alias ucorn="bundle exec unicorn -p 3000"
 alias rint="rake spec:integration"
 alias jas="rake jasmine"
 alias routes="rake routes"
-alias sp="rspec"
 alias r="rails"
 
 #Git
 alias st="git status"
 alias stash="git stash"
-alias add="git add -p"
 alias g="git "
 alias gc="git commit -m "
 alias log="git lg"
@@ -124,6 +121,9 @@ alias tag-rails="ctags -a -e -f TAGS --tag-relative -R app lib"
 # Scripts
 alias rversion="~/.homesick/repos/castle/scripts/rversion/bin/rversion"
 alias bones="~/Development/bones/bin/bones"
-# RubyMotion
 
+# RubyMotion
 alias mrake="rake retina=true"
+
+#elastic-search
+alias es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"

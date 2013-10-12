@@ -53,12 +53,9 @@ if [ -d "${RBENV_ROOT}" ]; then
 fi
 # Prompt
 
-prompt="\[$green\]\w:\[$end\] "
-
-PS1="$prompt"
-git_branch="\[$yellow\]\`ruby -e \"print (%x{git branch 2> /dev/null}.split(%r{\n}).grep(/^\*/).first || '').gsub(/^\* (.+)$/, '\1')\"\`\[$end\] "
-export PS1="${git_branch}${prompt}"
-export PS2="\[$yello\] > \[$end\]"
-
+prompt="\[$green\]\w ❯ \[$end\]"
+PS1="${prompt}"
+PS2="\[$yello\] > \[$end\]"
+export PROMPT_COMMAND="git_prompt"
 # Make bash check it's window size after a process completes
 shopt -s checkwinsize
