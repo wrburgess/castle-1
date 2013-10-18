@@ -53,7 +53,7 @@ if [ -d "${RBENV_ROOT}" ]; then
 fi
 # Prompt
 prompt_color="${lightblue}"
-git_dirty_color="${redb}"
+git_dirty_color="${yellowb}"
 git_clean_color="${greenb}"
 
 prompt="\[$prompt_color\]\w ❯ \[$end\]"

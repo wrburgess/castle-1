@@ -362,7 +362,7 @@ function git_status_icon {
   if [[ $(git_status_is_clean) == "yes" ]]; then
     echo "\[$git_clean_color\]✓"
   else
-    echo "\[$yellow\]$(modified_file_count)\[$end\]:\[$green\]$(added_file_count)\[$end\]:\[$red\]$(deleted_file_count)\[$end\]"
+    echo "\[$yellow\]$(modified_file_count)\[$end\]:\[$green\]$(added_file_count)\[$end\]:\[$red\]$(deleted_file_count)\[$end\]\[$git_dirty_color\]"
   fi
 }
 
@@ -397,4 +397,30 @@ function repo_prompt {
     cprj_path="${PWD/${HOME}\//}"
   fi
   echo "\[$prompt_color\]${cprj_path} ❯ \[$end\]"
+}
+
+
+function backup {
+  echo "Begin backup..."
+  if [ -f "~/.${logdate}.md" ]; then
+    echo "deleted file"
+    rm -f ~/.${logdate}.md
+  fi
+  write_to_backup_log "Pictures"
+  write_to_backup_log "--------"
+  echo "rsync -vaz /Volumes/External750/Pictures /Volumes/daytonn >> ~/.${logdate}.md"
+
+  write_to_backup_log "Programs"
+  write_to_backup_log "--------"
+  echo "rsync -vaz /Volumes/External750/Program\ Library /Volumes/daytonn >> ~/.${logdate}.md"
+
+  write_to_backup_log "Development"
+  write_to_backup_log "-----------"
+  rsync -vaz ~/Development /Volumes/daytonn >> ~/.${logdate}.md
+  echo "Backup complete!"
+}
+
+function write_to_backup_log {
+  local logdate=$(date +Backup-%a-%b-%Y)
+  echo "$1" >> ~/.${logdate}.md
 }

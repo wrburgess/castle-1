@@ -53,6 +53,8 @@ alias bfn='$EDITOR ~/.bash_functions'
 alias als='$EDITOR ~/.aliases'
 alias ev='$EDITOR ~/.env'
 alias reload='source ~/.env; source ~/.bash_profile;'
+alias rl='source ~/.env; source ~/.bash_profile;'
+alias gp="git_prompt"
 alias sh='bash'
 alias hmsik="cd ~/.homesick/repos/castle"
 
@@ -60,14 +62,15 @@ alias hmsik="cd ~/.homesick/repos/castle"
 alias be="bundle exec "
 alias b="bundle "
 
+#Ruby
+alias irb="pry"
+
 #Rails
 alias migrate="bundle exec rake db:migrate"
 alias prepare="bundle exec rake db:test:prepare"
 alias reset="bundle exec rake db:reset"
 alias ucorn="bundle exec unicorn -p 3000"
 alias rint="rake spec:integration"
-alias jas="rake jasmine"
-alias routes="rake routes"
 alias r="rails"
 
 #Git
