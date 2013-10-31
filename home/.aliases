@@ -57,7 +57,7 @@ alias reload='source ~/.env; source ~/.bash_profile;'
 alias rl='source ~/.env; source ~/.bash_profile;'
 alias gp="git_prompt"
 alias sh='bash'
-alias hmsik="cd ~/.homesick/repos/castle"
+alias hmsik="cd ~/.homesick"
 
 # Bundler
 alias be="bundle exec "

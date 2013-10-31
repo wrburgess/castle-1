@@ -13,6 +13,7 @@ function project {
 function stfu {
   open -a Flowdock
   open -a localhost:300 -a "Google Chrome"
+  open -a Airmail
   project
   if [[ -n "$1" ]]; then
     $($1 .)
@@ -60,25 +61,25 @@ function sp {
   esac
 }
 
-# function bundle {
-#   bundler_cmd=`which bundle`
-#   if [ -z "$1" ] || [ "$1" == "install" ]; then
-#     if [ ! -d ./.bundle/bin ]; then
-#       $bundler_cmd --binstubs .bundle/bin
-#     else
-#       $bundler_cmd
-#     fi
-#   else
-#     $bundler_cmd "$@"
-#   fi
-#   rbenv rehash
-# }
+function bundle {
+  bundler_cmd=`which bundle`
+  if [ -z "$1" ] || [ "$1" == "install" ]; then
+    if [ ! -d ./.bundle/bin ]; then
+      $bundler_cmd --binstubs .bundle/bin
+    else
+      $bundler_cmd
+    fi
+  else
+    $bundler_cmd "$@"
+  fi
+  rbenv rehash
+}
 
-# function gem {
-#   gem_cmd=`which gem`
-#   $gem_cmd "$@"
-#   rbenv rehash
-# }
+function gem {
+  gem_cmd=`which gem`
+  $gem_cmd "$@"
+  rbenv rehash
+}
 
 function gd {
   if [ -n "$1" ] && [ ! -z "$2" ]; then
