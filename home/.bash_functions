@@ -12,7 +12,6 @@ function project {
 
 function stfu {
   open -a Flowdock
-  open -a Airmail
   open -a localhost:300 -a "Google Chrome"
   project
   if [[ -n "$1" ]]; then
@@ -61,25 +60,25 @@ function sp {
   esac
 }
 
-function bundle {
-  bundler_cmd=`which bundle`
-  if [ -z "$1" ] || [ "$1" == "install" ]; then
-    if [ ! -d ./.bundle/bin ]; then
-      $bundler_cmd --binstubs .bundle/bin
-    else
-      $bundler_cmd
-    fi
-  else
-    $bundler_cmd "$@"
-  fi
-  rbenv rehash
-}
+# function bundle {
+#   bundler_cmd=`which bundle`
+#   if [ -z "$1" ] || [ "$1" == "install" ]; then
+#     if [ ! -d ./.bundle/bin ]; then
+#       $bundler_cmd --binstubs .bundle/bin
+#     else
+#       $bundler_cmd
+#     fi
+#   else
+#     $bundler_cmd "$@"
+#   fi
+#   rbenv rehash
+# }
 
-function gem {
-  gem_cmd=`which gem`
-  $gem_cmd "$@"
-  rbenv rehash
-}
+# function gem {
+#   gem_cmd=`which gem`
+#   $gem_cmd "$@"
+#   rbenv rehash
+# }
 
 function gd {
   if [ -n "$1" ] && [ ! -z "$2" ]; then
@@ -344,6 +343,7 @@ function brew {
   if [ "$1" == "install" ] || [ "$1" == "upgrade" ]; then
       $brew_cmd update
       $brew_cmd "$@"
+      $brew_cmd cleanup
   else
     $brew_cmd "$@"
   fi
@@ -381,6 +381,10 @@ function deleted_file_count {
   echo "$count"
 }
 
+function current_branch {
+  echo git rev-parse --abbrev-ref HEAD 2>/dev/null
+}
+
 function git_prompt {
   local branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
   if [ -n "$branch" ]; then
@@ -399,6 +403,13 @@ function repo_prompt {
   echo "\[$prompt_color\]${cprj_path} ❯ \[$end\]"
 }
 
+function outdated_formulae_count {
+  echo `brew outdated | wc -l | tr -d " "`
+}
+
+function render_prompt {
+  git_prompt
+}
 
 function backup {
   echo "Begin backup..."
@@ -418,6 +429,15 @@ function backup {
   write_to_backup_log "-----------"
   rsync -vaz ~/Development /Volumes/daytonn >> ~/.${logdate}.md
   echo "Backup complete!"
+}
+
+uninstall_gems() {
+  list=`gem list --no-versions`
+  for gem in $list; do
+    gem uninstall $gem -aIx
+  done
+  gem list
+  gem install bundler
 }
 
 function write_to_backup_log {

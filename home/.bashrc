@@ -59,6 +59,6 @@ git_clean_color="${greenb}"
 prompt="\[$prompt_color\]\w ❯ \[$end\]"
 PS1="${prompt}"
 PS2="\[$yellow\]❯❯ \[$end\]"
-export PROMPT_COMMAND="git_prompt"
+export PROMPT_COMMAND="render_prompt"
 # Make bash check it's window size after a process completes
 shopt -s checkwinsize

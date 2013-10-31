@@ -34,6 +34,7 @@ alias db='cd ~/Dropbox'
 alias scripts="cd ~/.homesick/repos/castle/scripts"
 alias c="clear"
 alias appsup="cd ~/Library/Application\ Support/"
+alias subd="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages"
 alias fm="foreman start"
 alias fml="foreman start -f Procfile.local"
 alias tree="tree --dirsfirst -lFC"
@@ -82,6 +83,7 @@ alias log="git lg"
 alias diff="git diff"
 alias gpoh="git push origin master && git push heroku master -f"
 alias rebase="git pull --rebase"
+alias rcont="git rebase --continue"
 #Application shortcuts
 alias itunes="open -a iTunes"
 alias firefox="open -a Firefox"
@@ -130,3 +132,7 @@ alias mrake="rake retina=true"
 
 #elastic-search
 alias es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
+
+alias rspec="bundle exec rspec"
+alias dr="brew doctor"
+alias outdated="brew outdated"
