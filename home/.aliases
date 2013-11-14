@@ -49,6 +49,8 @@ alias stampede="for i in {1..10}; do { unicornleap & }  ;  sleep 0.5; done"
 
 #Settings
 alias brc="$EDITOR ~/.bashrc"
+alias zrc="$EDITOR ~/.zshrc"
+alias omzrc="$EDITOR ~/.oh-my-zsh"
 alias bp='$EDITOR ~/.bash_profile'
 alias bfn='$EDITOR ~/.bash_functions'
 alias als='$EDITOR ~/.aliases'
@@ -65,6 +67,7 @@ alias b="bundle "
 
 #Ruby
 alias irb="pry"
+alias motoruby="/Library/RubyMotion/bin/ruby"
 
 #Rails
 alias migrate="bundle exec rake db:migrate"
@@ -90,6 +93,7 @@ alias firefox="open -a Firefox"
 alias chrome='open -a "Google Chrome"'
 alias safari='open -a "Google Chrome"'
 alias pg="postgres -D /usr/local/var/postgres"
+alias pgs="psql -d template1 -U daytonn"
 alias tower="open .git -a Tower"
 #Configuration
 alias showdock="defaults write com.apple.dock tilesize -int 48;defaults write com.apple.dock pinning -string middle;defaults write com.apple.dock autohide -bool false;killall Dock"
@@ -136,3 +140,4 @@ alias es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elas
 alias rspec="bundle exec rspec"
 alias dr="brew doctor"
 alias outdated="brew outdated"
+alias whereami="echo ${PWD}"

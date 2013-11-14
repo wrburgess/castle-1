@@ -5,8 +5,10 @@
   helper = osxkeychain
 [mergetool]
 	keepBackup = true
+	prompt = false
 [github]
   user = daytonn
+  email = daytonn@gmail.com
 [core]
   editor = subl
 [alias]
@@ -49,3 +51,8 @@
 	tool = Kaleidoscope
 [push]
 	default = simple
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[merge]
+	tool = Kaleidoscope

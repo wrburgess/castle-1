@@ -11,9 +11,8 @@ if [ -f ~/.colors ]
 fi
 
 # Include git completion
-if [ -f ~/.git-completion.sh ]
-  then
-   source ~/.git-completion.sh
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 # Include alias file
@@ -34,11 +33,6 @@ if [ -f ~/.secrets ]
    source ~/.secrets
 fi
 
-# bash_completion
-if [ -f /usr/local/etc/bash_completion ]; then
-  . /usr/local/etc/bash_completion
-fi
-
 # Override shunit2 output format
 if [ -f ~/.shunit2 ]
   then
@@ -51,6 +45,7 @@ if [ -d "${RBENV_ROOT}" ]; then
   export PATH="${RBENV_ROOT}/bin:${PATH}"
   eval "$(rbenv init - --no-rehash)"
 fi
+
 # Prompt
 prompt_color="${lightblue}"
 git_dirty_color="${yellowb}"
