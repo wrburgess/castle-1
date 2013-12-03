@@ -21,6 +21,10 @@ if [ -f ~/.aliases ]
    source ~/.aliases
 fi
 
+if [ -f /usr/local/opt/node/lib/node_modules/npm/lib/utils/completion.sh ]; then
+  source /usr/local/opt/node/lib/node_modules/npm/lib/utils/completion.sh
+fi
+
 # Include functions file
 if [ -f ~/.bash_functions ]
   then
@@ -48,8 +52,8 @@ fi
 
 # Prompt
 prompt_color="${lightblue}"
-git_dirty_color="${yellowb}"
-git_clean_color="${greenb}"
+git_dirty_color="${yellow}"
+git_clean_color="${green}"
 
 prompt="\[$prompt_color\]\w ❯ \[$end\]"
 PS1="${prompt}"

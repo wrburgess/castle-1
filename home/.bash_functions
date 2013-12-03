@@ -219,6 +219,14 @@ function nx {
   fi
 }
 
+function pman {
+  if [ -n "$1" ]; then
+    man -t "${1}" | open -f -a /Applications/Preview.app
+  else
+    echo "Usage: pman [application]"
+  fi
+}
+
 function copy {
   if [ -n "$1" ]; then
     if [ -f "$1" ] && [ ! -d "$1" ]; then
@@ -241,7 +249,7 @@ function add {
   if [ -z "$1" ]; then
     git add -p
   else
-    git add "$@"
+    git add "$@" -u
   fi
 }
 
@@ -464,4 +472,24 @@ function colortest {
     echo;
   done
   echo
+}
+
+function server {
+  if [ -n "$1" ]; then
+    python -m SimpleHTTPServer "$1"
+  else
+    python -m SimpleHTTPServer 3000
+  fi
+}
+
+function sublime_repeat {
+  if [ -n "$1" ]; then
+    if [ "$1" == "enable" ]; then
+      defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool true
+      echo "Sublime key repeat enabled"
+    else
+      defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
+      echo "Sublime key repeat disabled"
+    fi
+  fi
 }
