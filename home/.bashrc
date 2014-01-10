@@ -43,8 +43,6 @@ if [ -f ~/.shunit2 ]
    source ~/.shunit2
 fi
 
-export RBENV_ROOT="${HOME}/.rbenv"
-
 if [ -d "${RBENV_ROOT}" ]; then
   export PATH="${RBENV_ROOT}/bin:${PATH}"
   eval "$(rbenv init - --no-rehash)"
@@ -61,3 +59,6 @@ PS2="\[$yellow\]❯❯ \[$end\]"
 export PROMPT_COMMAND="render_prompt"
 # Make bash check it's window size after a process completes
 shopt -s checkwinsize
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

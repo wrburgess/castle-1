@@ -65,7 +65,7 @@ function sp {
 function bundle {
   bundler_cmd=`which bundle`
   if [ -z "$1" ] || [ "$1" == "install" ]; then
-    if [ ! -d ./.bundle/bin ]; then
+    if [ ! -d .bundle/bin ]; then
       $bundler_cmd --binstubs .bundle/bin
     else
       $bundler_cmd
@@ -73,13 +73,6 @@ function bundle {
   else
     $bundler_cmd "$@"
   fi
-  rbenv rehash
-}
-
-function gem {
-  gem_cmd=`which gem`
-  $gem_cmd "$@"
-  rbenv rehash
 }
 
 function gd {
@@ -129,9 +122,9 @@ function push {
 
 function s {
   if [ -n "$1" ]; then
-    touch "$1" && open "$1" -a "Sublime Text 2"
+    touch "$1" && open "$1" -a "Sublime Text"
   else
-    open "./" -a "Sublime Text 2"
+    open "./" -a "Sublime Text"
   fi
 }
 
@@ -421,26 +414,6 @@ function render_prompt {
   git_prompt
 }
 
-function backup {
-  echo "Begin backup..."
-  if [ -f "~/.${logdate}.md" ]; then
-    echo "deleted file"
-    rm -f ~/.${logdate}.md
-  fi
-  write_to_backup_log "Pictures"
-  write_to_backup_log "--------"
-  echo "rsync -vaz /Volumes/External750/Pictures /Volumes/daytonn >> ~/.${logdate}.md"
-
-  write_to_backup_log "Programs"
-  write_to_backup_log "--------"
-  echo "rsync -vaz /Volumes/External750/Program\ Library /Volumes/daytonn >> ~/.${logdate}.md"
-
-  write_to_backup_log "Development"
-  write_to_backup_log "-----------"
-  rsync -vaz ~/Development /Volumes/daytonn >> ~/.${logdate}.md
-  echo "Backup complete!"
-}
-
 uninstall_gems() {
   list=`gem list --no-versions`
   for gem in $list; do
@@ -448,11 +421,6 @@ uninstall_gems() {
   done
   gem list
   gem install bundler
-}
-
-function write_to_backup_log {
-  local logdate=$(date +Backup-%a-%b-%Y)
-  echo "$1" >> ~/.${logdate}.md
 }
 
 function colortest {
@@ -485,11 +453,23 @@ function server {
 function sublime_repeat {
   if [ -n "$1" ]; then
     if [ "$1" == "enable" ]; then
-      defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool true
+      defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool false
       echo "Sublime key repeat enabled"
     else
-      defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
+      defaults write com.sublimetext.2 ApplePressAndHoldEnabled -bool true
       echo "Sublime key repeat disabled"
     fi
+  fi
+}
+
+function notify {
+  if [[ -z "$1" ]]; then
+    echo "You must provide a message"
+  else
+    local title="Notification"
+    if [[ -n "$2" ]]; then
+      title="$2"
+    fi
+    osascript -e "display notification \"${1}\" with title \"${title}\""
   fi
 }

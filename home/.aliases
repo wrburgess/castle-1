@@ -17,8 +17,8 @@ alias lcl="cd /usr/local"
 alias src='cd /usr/local/src'
 alias bin='cd /usr/local/bin'
 alias t='touch '
-alias snips="ls -a ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/snippets | cat"
-alias snippets="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/snippets"
+alias snips="ls -a ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets | cat"
+alias snippets="cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets"
 
 #Shortcuts
 alias ~="cd ~"
@@ -34,8 +34,8 @@ alias db='cd ~/Dropbox'
 alias scripts="cd ~/.homesick/repos/castle/scripts"
 alias c="clear"
 alias appsup="cd ~/Library/Application\ Support/"
-alias subd="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User"
-alias subs="cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/snippets"
+alias subd="cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User"
+alias subs="cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets"
 alias fm="foreman start"
 alias fml="foreman start -f Procfile.local"
 alias tree="tree --dirsfirst -lFC"
@@ -56,7 +56,7 @@ alias bp='$EDITOR ~/.bash_profile'
 alias bfn='$EDITOR ~/.bash_functions'
 alias als='$EDITOR ~/.aliases'
 alias ev='$EDITOR ~/.env'
-alias reload='source ~/.env; source ~/.bash_profile;'
+alias reload='exec $SHELL'
 alias rl='source ~/.env; source ~/.bash_profile;'
 alias gp="git_prompt"
 alias sh='bash'
@@ -87,6 +87,7 @@ alias log="git lg"
 alias diff="git diff"
 alias gpoh="git push origin master && git push heroku master -f"
 alias rebase="git pull --rebase"
+alias master="git co master"
 alias rcont="git rebase --continue"
 #Application shortcuts
 alias itunes="open -a iTunes"
@@ -142,3 +143,16 @@ alias rspec="bundle exec rspec"
 alias dr="brew doctor"
 alias outdated="brew outdated"
 alias whereami="echo ${PWD}"
+alias vim='mvim'
+alias vi='/usr/local/bin/vim'
+alias sim="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
+
+alias v="vagrant "
+alias vu="vagrant up"
+alias vs="vagrant ssh"
+alias vh="vagrant halt"
+alias vd="vagrant destroy"
+
+alias pi="ssh pi@192.168.1.123"
+alias jshrc="s ~/.jshintrc"
+alias rcop="s ~/.rubocop.yml"
