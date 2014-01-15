@@ -116,7 +116,8 @@ function push {
   if [ -n "$1" ]; then
     git push origin "$1"
   else
-    git push origin master
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    git push origin $branch
   fi
 }
 
@@ -341,14 +342,26 @@ function loop {
   done
 }
 
+function export_brewed_apps {
+  brew list | while read app; do echo "$app"; done > ~/.brewed_apps
+}
+
+function reinstall_brewed_apps {
+  cat ~/.brewed_apps | while read app; do brew install "$app"; done
+}
+
 function brew {
   brew_cmd=`which brew`
   if [ "$1" == "install" ] || [ "$1" == "upgrade" ]; then
       $brew_cmd update
       $brew_cmd "$@"
       $brew_cmd cleanup
+      export_brewed_apps
   else
     $brew_cmd "$@"
+    if [[ "$1" == "uninstall" ]]; then
+      export_brewed_apps
+    fi
   fi
 }
 
