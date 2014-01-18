@@ -12,7 +12,6 @@
 [core]
   editor = subl
 [alias]
-  torqued = reset --hard
 	co = checkout
 	br = branch
 	ci = commit
@@ -23,9 +22,6 @@
   f = fetch
   p = push
   m = merge
-  ll = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Cgreen(%cr) %C(bold blue)<%an> %Creset %s' --abbrev-commit --date=relative --max-count=100
-  lg = "!source ~/.githelpers && pretty_git_log"
-  lgr = "!source ~/.githelpers && pretty_git_log | tail -r"
 [color]
   branch = auto
   diff = auto
