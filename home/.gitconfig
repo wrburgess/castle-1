@@ -30,7 +30,7 @@
   current = green
   local = cyan
   remote = white
-[color "diffiff"]
+[color "diff"]
   meta = white
   frag = cyan
   old = red

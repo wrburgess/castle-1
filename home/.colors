@@ -101,6 +101,9 @@ function colors {
 }
 
 function colortest {
+  if [[ -n "$1" ]]; then
+    T="$1"
+  fi
   T='gYw'   # The test text
 
   echo -e "\n                 40m     41m     42m     43m\

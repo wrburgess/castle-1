@@ -12,9 +12,8 @@ function project {
 
 function stfu {
   open -a Flowdock
-  open -a localhost:300 -a "Google Chrome"
+  open -a localhost:3000 -a "Google Chrome"
   open -a Airmail
-  open -a Messages
   project
   if [[ -n "$1" ]]; then
     $($1 .)
@@ -108,7 +107,8 @@ function pull {
   if [ -n "$1" ]; then
     git pull origin "$1"
   else
-    git pull origin master
+    branch=$(git rev-parse --abbrev-ref HEAD)
+    git pull origin $branch
   fi
 }
 
@@ -146,7 +146,6 @@ function badtouch {
 function tickle {
   if [ -n "$1" ] && [ ! -f "$1" ]; then
     path=$(dirname $1)
-    file=$(basename $1)
 
     [ ! -d "$path" ] && mkdir -p $path
     /usr/bin/touch "$1"
@@ -335,6 +334,16 @@ function example {
 
 }
 
+function showhidden {
+  defaults write com.apple.finder AppleShowAllFiles TRUE
+  killall Finder
+}
+
+function hidehidden {
+  defaults write com.apple.finder AppleShowAllFiles FALSE
+  killall Finder
+}
+
 function loop {
   for i in 1 2 3 4 5
   do
@@ -371,6 +380,23 @@ function git_status_is_clean {
     echo "yes"
   else
     echo "no"
+  fi
+}
+
+function gtest {
+  local status=`git status -s`
+
+  if [[ -n "$status" ]]; then
+    added=`echo "$status" | grep "[A\?{2}]\s" | wc -l | tr -d " "`
+    modified=`echo "$status" | grep "[M]\s" | wc -l | tr -d " "`
+    deleted=`echo "$status" | grep "[D]\s" | wc -l | tr -d " "`
+    echo "$added added"
+    echo "$modified modified"
+    echo "$deleted deleted"
+    echo "------------------------"
+    echo "$status"
+  else
+    echo -e "\[$git_clean_color\]✓"
   fi
 }
 

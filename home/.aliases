@@ -57,9 +57,6 @@ alias bfn='$EDITOR ~/.bash_functions'
 alias als='$EDITOR ~/.aliases'
 alias ev='$EDITOR ~/.env'
 alias reload='exec $SHELL'
-alias rl='source ~/.env; source ~/.bash_profile;'
-alias gp="git_prompt"
-alias sh='bash'
 alias hmsik="cd ~/.homesick"
 
 # Bundler
@@ -71,7 +68,7 @@ alias irb="pry"
 alias motoruby="/Library/RubyMotion/bin/ruby"
 
 #Rails
-alias migrate="bundle exec rake db:migrate"
+alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias prepare="bundle exec rake db:test:prepare"
 alias reset="bundle exec rake db:reset"
 alias ucorn="bundle exec unicorn -p 3000"
@@ -156,3 +153,8 @@ alias vd="vagrant destroy"
 alias pi="ssh pi@192.168.1.123"
 alias jshrc="s ~/.jshintrc"
 alias rcop="s ~/.rubocop.yml"
+
+# Heroku
+alias hlogs="heroku logs --tail --app"
+# Node
+alias jsn="jasmine-node spec"
