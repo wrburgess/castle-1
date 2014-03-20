@@ -22,6 +22,8 @@
   f = fetch
   p = push
   m = merge
+  unstage = reset
+  us = reset
 [color]
   branch = auto
   diff = auto

@@ -13,10 +13,10 @@ alias hidden="ls -ld .??*"
 alias trash="rm -rf ~/.Trash/*"
 alias delete="rm -Rf"
 alias remove="rm -Rf"
+alias rmrf="rm -Rf"
 alias lcl="cd /usr/local"
 alias src='cd /usr/local/src'
 alias bin='cd /usr/local/bin'
-alias t='touch '
 alias snips="ls -a ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets | cat"
 alias snippets="cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets"
 
@@ -45,7 +45,7 @@ alias clock='date "+%l:%M %p - %m/%d %a"'
 alias sha1='openssl sha1'
 alias diff="colordiff"
 alias q="exit"
-alias emc="cd ~/.emacs.d/personal"
+alias emc="cd ~/.emacs.d"
 alias stampede="for i in {1..10}; do { unicornleap & }  ;  sleep 0.5; done"
 
 #Settings
@@ -63,6 +63,9 @@ alias hmsik="cd ~/.homesick"
 alias be="bundle exec "
 alias b="bundle "
 
+#Rbenv
+alias rlist="rbenv versions"
+
 #Ruby
 alias irb="pry"
 alias motoruby="/Library/RubyMotion/bin/ruby"
@@ -74,6 +77,7 @@ alias reset="bundle exec rake db:reset"
 alias ucorn="bundle exec unicorn -p 3000"
 alias rint="rake spec:integration"
 alias r="rails"
+alias rs="rails server"
 
 #Git
 alias st="git status"
@@ -88,9 +92,6 @@ alias master="git co master"
 alias rcont="git rebase --continue"
 #Application shortcuts
 alias itunes="open -a iTunes"
-alias firefox="open -a Firefox"
-alias chrome='open -a "Google Chrome"'
-alias safari='open -a "Google Chrome"'
 alias pg="postgres -D /usr/local/var/postgres"
 alias pgs="psql -d template1 -U daytonn"
 alias tower="open .git -a Tower"
@@ -99,8 +100,6 @@ alias showdock="defaults write com.apple.dock tilesize -int 48;defaults write co
 alias hidedock="defaults write com.apple.dock tilesize -int 1;defaults write com.apple.dock pinning -string start;defaults write com.apple.dock autohide -bool true;killall Dock"
 
 # Rails shortcuts
-alias guard="guard --no-bundler-warning"
-alias gi="guard -g interactive"
 alias templates="tree --dirsfirst -lFC app/assets/javascripts/templates"
 alias jst="rake jst:watch"
 alias js="tree --dirsfirst -lFC app/assets/javascripts"
@@ -112,7 +111,6 @@ alias controllers="tree --dirsfirst -lFC app/controllers"
 alias views="tree --dirsfirst -lFC app/views"
 alias models="tree --dirsfirst -lFC app/models"
 alias specs="tree --dirsfirst -lFC spec/"
-alias rs="rails server"
 alias rc="rails console"
 alias seed="rake db:seed"
 alias create="rake db:create"
@@ -126,17 +124,12 @@ alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias tag-rails="ctags -a -e -f TAGS --tag-relative -R app lib"
 
-# Scripts
-alias rversion="~/.homesick/repos/castle/scripts/rversion/bin/rversion"
-alias bones="~/Development/bones/bin/bones"
-
 # RubyMotion
 alias mrake="rake retina=true"
 
 #elastic-search
 alias es="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
 
-alias rspec="bundle exec rspec"
 alias dr="brew doctor"
 alias outdated="brew outdated"
 alias whereami="echo ${PWD}"
@@ -153,8 +146,11 @@ alias vd="vagrant destroy"
 alias pi="ssh pi@192.168.1.123"
 alias jshrc="s ~/.jshintrc"
 alias rcop="s ~/.rubocop.yml"
+alias smysql="mysql.server start"
 
 # Heroku
 alias hlogs="heroku logs --tail --app"
 # Node
 alias jsn="jasmine-node spec"
+
+alias rup="rake rails:upgrade:check"

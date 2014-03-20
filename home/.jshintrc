@@ -73,6 +73,7 @@
     "it",
     "jasmine",
     "jQuery",
+    "JSKit",
     "JST",
     "ko",
     "loadFixtures",

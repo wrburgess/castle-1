@@ -1,5 +1,7 @@
 ack
+apple-gcc42
 autoconf
+automake
 bash
 bash-completion
 brew-cask
@@ -8,6 +10,7 @@ curl
 curl-ca-bundle
 elasticsearch
 elixir
+emacs
 erlang
 freetds
 freetype

@@ -129,11 +129,19 @@ function s {
   fi
 }
 
+function a {
+  if [ -n "$1" ]; then
+    touch "$1" && atom "$1"
+  else
+    atom .
+  fi
+}
+
 function e {
   if [ -n "$1" ]; then
-    open "$1" -a "Emacs"
+    open "$1" -a Emacs
   else
-    open "./" -a "Emacs"
+    open . -a Emacs
   fi
 }
 
@@ -380,23 +388,6 @@ function git_status_is_clean {
     echo "yes"
   else
     echo "no"
-  fi
-}
-
-function gtest {
-  local status=`git status -s`
-
-  if [[ -n "$status" ]]; then
-    added=`echo "$status" | grep "[A\?{2}]\s" | wc -l | tr -d " "`
-    modified=`echo "$status" | grep "[M]\s" | wc -l | tr -d " "`
-    deleted=`echo "$status" | grep "[D]\s" | wc -l | tr -d " "`
-    echo "$added added"
-    echo "$modified modified"
-    echo "$deleted deleted"
-    echo "------------------------"
-    echo "$status"
-  else
-    echo -e "\[$git_clean_color\]✓"
   fi
 }
 
